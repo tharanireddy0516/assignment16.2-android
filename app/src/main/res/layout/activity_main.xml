@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+<!--Linear layout is one of the types of layout
+It aligns views one by one that is by vertically/horizontally
+layout_width indicates the width of the Linear layout
+layout_Height indicates the height of the Linear layout
+context indicates the package name of the respective java class
+match parent will take complete height or width of text
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tharani.parallelasynctask.MainActivity">
+    <!--Button is a widget or view
+        layout_width indicates the width of the Button
+       layout_Height indicates the height of the Button
+       -->
+    <Button
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_parallel_download" />
+     <!--Progress bar is a user interface element that indicates the progress of an operation
+     Progress bar supports two modes to represent progress: determinate, and indeterminate.
+     style indicates style of progress to display in horizontal
+     fill_parent fills the width of progress bar
+     wrap content wraps the content
+     layout_marginTop indicates direction of progress bar
+     -->
+    <ProgressBar
+        android:id="@+id/progressbar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginTop="20dp"
+        android:progress="0" />
+    <!--taking second progress bar-->
+    <ProgressBar
+        android:id="@+id/progressbar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="20dp" />
+    <!--taking third progress bar-->
+    <ProgressBar
+        android:id="@+id/progressbar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="20dp" />
+    <!--taking fourth progress bar-->
+    <ProgressBar
+        android:id="@+id/progressbar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        android:progress="0"
+        />
+
+</LinearLayout><!--Linear Layout ends here-->

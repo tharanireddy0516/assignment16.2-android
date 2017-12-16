@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ParallelAsyncTask</string>
+    <string name="start_parallel_download">Start Parallel Download</string>
+</resources>

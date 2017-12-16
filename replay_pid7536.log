@@ -1,0 +1,1259 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 260 ciObject found
+ciMethod java/lang/Object <init> ()V 4097 1 2477780 0 0
+ciMethod java/lang/Object getClass ()Ljava/lang/Class; 2049 1 256 0 -1
+ciMethod java/lang/String length ()I 3073 1 803729 0 0
+ciMethod java/lang/String charAt (I)C 4097 1 1869697 0 128
+ciMethod java/lang/String getChars (II[CI)V 2073 1 5387 0 320
+ciMethod java/lang/Class getName ()Ljava/lang/String; 297 1 46901 0 -1
+ciMethod java/lang/Class getClassLoader ()Ljava/lang/ClassLoader; 2049 1 29678 0 0
+ciMethod java/lang/Class getClassLoader0 ()Ljava/lang/ClassLoader; 1025 1 128 0 0
+ciMethod java/lang/ClassLoader checkClassLoaderPermission (Ljava/lang/ClassLoader;Ljava/lang/Class;)V 0 0 1 0 -1
+ciMethod java/lang/System getSecurityManager ()Ljava/lang/SecurityManager; 2049 1 92554 0 0
+ciMethod java/lang/System arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V 4097 1 512 0 -1
+ciMethod java/lang/System identityHashCode (Ljava/lang/Object;)I 2049 1 256 0 -1
+ciMethod java/lang/Long longValue ()J 9 1 7133 0 -1
+ciMethod java/io/ObjectStreamField getName ()Ljava/lang/String; 1033 1 129 0 0
+ciMethod java/io/ObjectStreamField getTypeCode ()C 2049 1 8203 0 0
+ciMethod java/io/ObjectStreamField getTypeString ()Ljava/lang/String; 3465 1 5112 0 0
+ciMethod java/io/ObjectStreamField isPrimitive ()Z 2369 1 13634 0 160
+ciMethod java/security/AccessController doPrivileged (Ljava/security/PrivilegedAction;)Ljava/lang/Object; 2049 1 256 0 -1
+ciMethod sun/reflect/Reflection getCallerClass ()Ljava/lang/Class; 3073 1 384 0 -1
+ciMethod java/lang/Math min (II)I 2817 1 197580 0 -1
+ciMethod java/io/OutputStream write ([BII)V 57 1097 7 0 -1
+ciMethod sun/reflect/misc/ReflectUtil checkPackageAccess (Ljava/lang/Class;)V 2513 1 7640 0 1568
+ciMethod sun/reflect/misc/ReflectUtil checkPackageAccess (Ljava/lang/String;)V 2105 1 6411 0 -1
+ciMethod sun/reflect/misc/ReflectUtil needsPackageAccessCheck (Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)Z 0 0 1 0 -1
+ciMethod sun/reflect/misc/ReflectUtil checkProxyPackageAccess (Ljava/lang/Class;)V 0 0 1 0 -1
+ciMethod sun/reflect/misc/ReflectUtil isNonPublicProxyClass (Ljava/lang/Class;)Z 1 1 5158 0 -1
+ciMethod java/util/Arrays fill ([II)V 2465 24641 3536 0 -1
+ciMethodData java/lang/Object <init> ()V 2 2477807 orig 264 56 157 31 117 0 0 0 0 128 4 235 20 0 0 0 0 32 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 121 103 46 1 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/lang/String charAt (I)C 2 1869697 orig 264 56 157 31 117 0 0 0 0 176 61 235 20 0 0 0 0 120 1 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 9 44 228 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 8 0 2 0 0 0 80 0 0 0 255 255 255 255 7 0 1 0 0 0 0 0 data 10 0x10007 0x0 0x40 0x1c8582 0xa0007 0x1c8586 0x30 0x0 0x120002 0x0 oops 0
+ciMethodData java/lang/String length ()I 2 803729 orig 264 56 157 31 117 0 0 0 0 96 60 235 20 0 0 0 0 32 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 128 1 0 0 137 16 98 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/lang/String getChars (II[CI)V 2 5387 orig 264 56 157 31 117 0 0 0 0 8 66 235 20 0 0 0 0 8 2 0 0 128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 1 0 0 65 160 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 9 0 2 0 0 0 160 0 0 0 255 255 255 255 7 0 1 0 0 0 0 0 data 20 0x10007 0x1408 0x30 0x0 0x90002 0x0 0x130007 0x1408 0x30 0x0 0x1b0002 0x0 0x210007 0x1408 0x30 0x0 0x2b0002 0x0 0x3a0002 0x1408 oops 0
+ciMethodData java/lang/System getSecurityManager ()Ljava/lang/SecurityManager; 2 92554 orig 264 56 157 31 117 0 0 0 0 120 151 236 20 0 0 0 0 24 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 81 68 11 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/lang/Class getClassLoader ()Ljava/lang/ClassLoader; 2 29678 orig 264 56 157 31 117 0 0 0 0 192 201 235 20 0 0 0 0 232 1 0 0 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 113 151 3 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 1 0 30 0 2 0 0 0 160 0 0 0 255 255 255 255 5 0 1 0 0 0 0 0 data 20 0x10005 0x0 0x1de9a10 0x72ee 0x0 0x0 0x60007 0x2b56 0x20 0x4798 0xb0002 0x2b56 0x100007 0x2b56 0x40 0x0 0x140002 0x0 0x170002 0x0 oops 1 2 java/lang/Class
+ciMethod java/io/DataOutputStream writeShort (I)V 2265 1 21771 0 -1
+ciMethod java/io/DataOutputStream writeInt (I)V 833 1 5359 0 -1
+ciMethod java/io/DataOutputStream writeLong (J)V 1 1 5452 0 -1
+ciMethodData java/lang/Long longValue ()J 2 7133 orig 264 56 157 31 117 0 0 0 0 120 149 245 20 0 0 0 0 32 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 225 222 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethod org/gradle/internal/serialize/Encoder writeBytes ([BII)V 0 0 1 0 -1
+ciMethod org/gradle/internal/serialize/AbstractEncoder$EncoderStream write ([BII)V 3145 1 5623 0 448
+ciMethod org/gradle/internal/serialize/kryo/KryoBackedEncoder writeBytes ([BII)V 2433 1 10544 0 896
+ciMethod com/esotericsoftware/kryo/io/Output require (I)Z 1425 1 6331 0 576
+ciMethod com/esotericsoftware/kryo/io/Output flush ()V 593 1 6824 0 -1
+ciMethod com/esotericsoftware/kryo/io/Output writeBytes ([BII)V 2457 1 10288 0 0
+ciMethod java/io/Bits putShort ([BIS)V 2289 1 5421 0 0
+ciMethod java/io/Bits putInt ([BII)V 1849 1 1274 0 192
+ciMethod java/io/Bits putLong ([BIJ)V 2081 1 1290 0 288
+ciMethod java/io/ObjectStreamClass getSerialVersionUID ()J 2649 1 4794 0 0
+ciMethod java/io/ObjectStreamClass forClass ()Ljava/lang/Class; 2073 1 5384 0 128
+ciMethod java/io/ObjectStreamClass writeNonProxy (Ljava/io/ObjectOutputStream;)V 3081 5025 4645 0 0
+ciMethod java/io/ObjectStreamClass requireInitialized ()V 2049 1 59045 0 0
+ciMethod java/io/ObjectStreamClass getSuperDesc ()Ljava/io/ObjectStreamClass; 4097 1 5859 0 0
+ciMethod java/io/ObjectStreamClass isProxy ()Z 1145 1 4641 0 0
+ciMethod java/io/ObjectOutputStream annotateClass (Ljava/lang/Class;)V 4097 1 4645 0 0
+ciMethod java/io/ObjectOutputStream writeClassDescriptor (Ljava/io/ObjectStreamClass;)V 3361 1 4645 0 0
+ciMethod java/io/ObjectOutputStream writeByte (I)V 2049 1 12326 0 0
+ciMethod java/io/ObjectOutputStream writeShort (I)V 3153 1 4645 0 0
+ciMethod java/io/ObjectOutputStream writeLong (J)V 3121 1 4645 0 0
+ciMethod java/io/ObjectOutputStream writeUTF (Ljava/lang/String;)V 2065 1 12326 0 0
+ciMethod java/io/ObjectOutputStream getProtocolVersion ()I 0 0 1 0 -1
+ciMethod java/io/ObjectOutputStream writeTypeString (Ljava/lang/String;)V 3465 1 5112 0 0
+ciMethod java/io/ObjectOutputStream writeNull ()V 761 1 2965 0 0
+ciMethod java/io/ObjectOutputStream writeHandle (I)V 825 1 4592 0 0
+ciMethod java/io/ObjectOutputStream writeClassDesc (Ljava/io/ObjectStreamClass;Z)V 2089 1 8456 0 0
+ciMethod java/io/ObjectOutputStream isCustomSubclass ()Z 4097 1 5643 0 0
+ciMethod java/io/ObjectOutputStream writeProxyDesc (Ljava/io/ObjectStreamClass;Z)V 0 0 1 0 -1
+ciMethod java/io/ObjectOutputStream writeNonProxyDesc (Ljava/io/ObjectStreamClass;Z)V 1145 1 4641 0 0
+ciMethod java/io/ObjectOutputStream writeString (Ljava/lang/String;Z)V 1745 1 5721 0 0
+ciMethod java/io/ObjectStreamClass$1 <init> (Ljava/io/ObjectStreamClass;)V 193 1 49 0 0
+ciMethodData java/io/ObjectStreamField isPrimitive ()Z 2 13662 orig 264 56 157 31 117 0 0 0 0 24 11 246 20 0 0 0 0 208 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 1 0 0 177 161 1 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 13 0 2 0 0 0 136 0 0 0 255 255 255 255 5 0 5 0 0 0 0 0 data 17 0x50005 0x0 0x1de9980 0x3436 0x0 0x0 0xc0007 0x29ab 0x58 0xa8b 0x120007 0x12 0x38 0xa79 0x160003 0xa79 0x18 oops 1 2 java/lang/String
+ciMethodData java/io/ObjectStreamClass requireInitialized ()V 2 59066 orig 264 56 157 31 117 0 0 0 0 16 65 17 25 0 0 0 0 80 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 193 45 7 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 5 0 2 0 0 0 48 0 0 0 255 255 255 255 7 0 4 0 0 0 0 0 data 6 0x40007 0xe5b8 0x30 0x0 0xd0002 0x0 oops 0
+ciMethodData java/io/ObjectStreamField getTypeCode ()C 2 8235 orig 264 56 157 31 117 0 0 0 0 152 8 246 20 0 0 0 0 120 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 89 249 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 7 0 2 0 0 0 48 0 0 0 255 255 255 255 5 0 5 0 0 0 0 0 data 6 0x50005 0x0 0x1de9980 0x1f2b 0x0 0x0 oops 1 2 java/lang/String
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream setBlockDataMode (Z)Z 3305 1 35291 0 1088
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream drain ()V 1129 1 11457 0 992
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream writeBlockHeader (I)V 9 1 5 0 0
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream writeByte (I)V 2097 1 27637 0 160
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream writeShort (I)V 2289 1 5421 0 224
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream writeInt (I)V 825 1 4621 0 0
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream writeLong (J)V 3121 1 4648 0 0
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream writeBytes (Ljava/lang/String;)V 1129 34801 1341 0 1088
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream writeUTF (Ljava/lang/String;)V 2065 1 12326 0 0
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream getUTFLength (Ljava/lang/String;)J 1049 33081 1020 0 1088
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream writeUTF (Ljava/lang/String;J)V 2065 1 5528 0 1344
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream writeLongUTF (Ljava/lang/String;J)V 0 0 1 0 -1
+ciMethod java/io/ObjectOutputStream$BlockDataOutputStream writeUTFBody (Ljava/lang/String;)V 0 0 1 0 -1
+ciMethod java/io/ObjectOutputStream$HandleTable assign (Ljava/lang/Object;)I 3113 1 5701 0 0
+ciMethod java/io/ObjectOutputStream$HandleTable lookup (Ljava/lang/Object;)I 3321 1649 6565 0 416
+ciMethod java/io/ObjectOutputStream$HandleTable insert (Ljava/lang/Object;I)V 3121 1 5609 0 448
+ciMethod java/io/ObjectOutputStream$HandleTable growSpine ()V 1 1 3 0 0
+ciMethod java/io/ObjectOutputStream$HandleTable growEntries ()V 209 1 374 0 0
+ciMethod java/io/ObjectOutputStream$HandleTable hash (Ljava/lang/Object;)I 2097 1 9938 0 0
+ciMethodData java/io/ObjectOutputStream$BlockDataOutputStream writeByte (I)V 2 27637 orig 264 56 157 31 117 0 0 0 0 248 147 146 25 0 0 0 0 160 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 1 0 0 121 87 3 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 6 0 2 0 0 0 80 0 0 0 255 255 255 255 7 0 7 0 0 0 0 0 data 10 0x70007 0x6aef 0x50 0x0 0xb0005 0x0 0x0 0x0 0x0 0x0 oops 0
+ciMethodData java/io/ObjectOutputStream$BlockDataOutputStream drain ()V 2 11458 orig 264 56 157 31 117 0 0 0 0 168 145 146 25 0 0 0 0 200 1 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 0 2 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 140 0 0 0 169 97 1 0 1 0 0 0 214 22 0 0 0 0 0 0 2 0 0 0 0 0 8 0 2 0 0 0 128 0 0 0 255 255 255 255 7 0 4 0 0 0 0 0 data 16 0x40007 0x1312 0x20 0x1923 0xce007 0x130f 0x30 0x4 0x140002 0x4 0x24f005 0x4 0x17b3fc40 0x130b 0x17b3fcf0 0xa oops 2 12 org/gradle/internal/serialize/AbstractEncoder$EncoderStream 14 java/io/ByteArrayOutputStream
+ciMethodData java/io/ObjectOutputStream$BlockDataOutputStream getUTFLength (Ljava/lang/String;)J 2 33331 orig 264 56 157 31 117 0 0 0 0 144 163 146 25 0 0 0 0 192 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39 16 0 0 201 27 0 0 97 144 3 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 21 0 2 0 0 0 112 1 0 0 255 255 255 255 5 0 1 0 0 0 0 0 data 46 0x10005 0xa 0x1de9980 0x36f 0x0 0x0 0xd0007 0x379 0x140 0x379 0x170002 0x379 0x290005 0xa 0x1de9980 0x36f 0x0 0x0 0x330007 0x379 0xc8 0x6e93 0x420007 0x0 0x58 0x6e93 0x490007 0x0 0x38 0x6e93 0x500003 0x6e93 0x50 0x580007 0x0 0x38 0x0 0x610003 0x0 0x18 0x6d0003 0x6e93 0xffffffffffffff50 0x770003 0x379 0xfffffffffffffed8 oops 2 2 java/lang/String 14 java/lang/String
+ciMethodData java/io/ObjectOutputStream$BlockDataOutputStream writeBytes (Ljava/lang/String;)V 2 44207 orig 264 56 157 31 117 0 0 0 0 224 153 146 25 0 0 0 0 176 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 254 16 0 0 129 37 0 0 137 221 4 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 23 0 2 0 0 0 96 1 0 0 255 255 255 255 5 0 1 0 0 0 0 0 data 44 0x10005 0x0 0x1de9980 0x4b0 0x0 0x0 0x100007 0x4b0 0x130 0x4b0 0x160007 0x0 0x60 0x4b0 0x220002 0x4b0 0x340005 0x0 0x1de9980 0x4b0 0x0 0x0 0x3e0007 0x4b0 0x50 0x0 0x420005 0x0 0x0 0x0 0x0 0x0 0x510002 0x4b0 0x650007 0x4b0 0x38 0x9701 0x820003 0x9701 0xffffffffffffffe0 0x8c0003 0x4b0 0xfffffffffffffee8 oops 2 2 java/lang/String 18 java/lang/String
+ciMethodData java/io/ObjectOutputStream$HandleTable hash (Ljava/lang/Object;)I 2 9938 orig 264 56 157 31 117 0 0 0 0 96 184 146 25 0 0 0 0 96 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 1 0 0 97 46 1 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 16 0 0 0 255 255 255 255 2 0 1 0 0 0 0 0 data 2 0x10002 0x25cc oops 0
+ciMethodData java/io/ObjectOutputStream$BlockDataOutputStream writeShort (I)V 2 5421 orig 264 56 157 31 117 0 0 0 0 136 149 146 25 0 0 0 0 200 1 0 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 1 0 0 121 160 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 10 0 2 0 0 0 120 0 0 0 255 255 255 255 7 0 9 0 0 0 0 0 data 15 0x90007 0x0 0x48 0x140f 0x160002 0x140f 0x230003 0x140f 0x48 0x2b0005 0x0 0x0 0x0 0x0 0x0 oops 0
+ciMethodData java/io/Bits putShort ([BIS)V 2 5421 orig 264 56 157 31 117 0 0 0 0 128 232 16 25 0 0 0 0 48 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 1 0 0 121 160 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/io/ObjectOutputStream$BlockDataOutputStream writeUTF (Ljava/lang/String;J)V 2 5528 orig 264 56 157 31 117 0 0 0 0 88 164 146 25 0 0 0 0 104 2 0 0 224 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 177 164 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 8 0 2 0 0 0 8 1 0 0 255 255 255 255 7 0 5 0 0 0 0 0 data 33 0x50007 0x1496 0x30 0x0 0xc0002 0x0 0x130005 0x0 0x1b23a290 0x1496 0x0 0x0 0x180005 0xa 0x1de9980 0x148c 0x0 0x0 0x1d0007 0x0 0x68 0x1496 0x220005 0x0 0x1b23a290 0x1496 0x0 0x0 0x250003 0x1496 0x28 0x2a0002 0x0 oops 3 8 java/io/ObjectOutputStream$BlockDataOutputStream 14 java/lang/String 24 java/io/ObjectOutputStream$BlockDataOutputStream
+ciMethodData org/gradle/internal/serialize/kryo/KryoBackedEncoder writeBytes ([BII)V 2 10544 orig 264 56 157 31 117 0 0 0 0 176 140 10 25 0 0 0 0 144 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 1 0 0 1 64 1 0 1 0 0 0 7 20 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 48 0 0 0 255 255 255 255 5 0 7 0 0 0 0 0 data 6 0x70005 0x0 0x1ba30190 0x2800 0x0 0x0 oops 1 2 com/esotericsoftware/kryo/io/Output
+ciMethodData com/esotericsoftware/kryo/io/Output writeBytes ([BII)V 2 10288 orig 264 56 157 31 117 0 0 0 0 200 182 10 25 0 0 0 0 8 2 0 0 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51 1 0 0 233 55 1 0 81 0 0 0 4 20 0 0 1 0 0 0 2 0 0 0 1 0 16 0 2 0 0 0 168 0 0 0 255 255 255 255 7 0 1 0 0 0 0 0 data 21 0x10007 0x26fd 0x30 0x0 0xa0002 0x0 0x180002 0x26fd 0x290002 0x2707 0x3de007 0xa 0x20 0x26ff 0x4b0002 0xa 0x530002 0xa 0x570003 0xa 0xffffffffffffffb0 oops 0
+ciMethodData org/gradle/internal/serialize/AbstractEncoder$EncoderStream write ([BII)V 2 5623 orig 264 56 157 31 117 0 0 0 0 176 136 6 25 0 0 0 0 144 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 137 1 0 0 113 163 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 48 0 0 0 255 255 255 255 5 0 7 0 0 0 0 0 data 6 0x70005 0x0 0x1ba2f370 0x146e 0x0 0x0 oops 1 2 org/gradle/internal/serialize/kryo/KryoBackedEncoder
+ciMethodData java/io/ObjectStreamClass forClass ()Ljava/lang/Class; 2 5384 orig 264 56 157 31 117 0 0 0 0 96 49 17 25 0 0 0 0 88 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 41 160 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 3 0 93 0 2 0 0 0 16 1 0 0 255 255 255 255 7 0 4 0 0 0 0 0 data 34 0x40007 0x1405 0x20 0x0 0xa0002 0x1405 0xd0002 0x1405 0x100007 0x1405 0xd0 0x0 0x130002 0x0 0x180005 0x0 0x0 0x0 0x0 0x0 0x1f0005 0x0 0x0 0x0 0x0 0x0 0x220002 0x0 0x250007 0x0 0x30 0x0 0x2c0002 0x0 oops 0
+ciMethodData java/io/ObjectOutputStream$HandleTable lookup (Ljava/lang/Object;)I 2 6565 orig 264 56 157 31 117 0 0 0 0 32 180 146 25 0 0 0 0 216 1 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 159 1 0 0 49 192 0 0 65 88 0 0 0 0 0 0 0 0 0 0 2 0 0 0 1 0 10 0 2 0 0 0 136 0 0 0 255 255 255 255 7 0 4 0 0 0 0 0 data 17 0x40007 0xfdb 0x20 0x82b 0xb0002 0xfdb 0x1d0007 0xbe5 0x58 0xefe 0x270007 0xb08 0x20 0x3f6 0x330003 0xb08 0xffffffffffffffc0 oops 0
+ciMethodData java/io/ObjectOutputStream$BlockDataOutputStream setBlockDataMode (Z)Z 2 36232 orig 264 56 157 31 117 0 0 0 0 208 139 146 25 0 0 0 0 216 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 157 1 0 0 89 95 4 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 8 0 2 0 0 0 136 0 0 0 255 255 255 255 7 0 5 0 0 0 0 0 data 17 0x50007 0x3bb8 0x20 0x5033 0xe0005 0x0 0x1b23a290 0x3bb8 0x0 0x0 0x1a0007 0x1f08 0x38 0x1cb0 0x1e0003 0x1cb0 0x18 oops 1 6 java/io/ObjectOutputStream$BlockDataOutputStream
+ciMethodData java/io/ObjectOutputStream writeByte (I)V 2 12349 orig 264 56 157 31 117 0 0 0 0 72 58 18 25 0 0 0 0 128 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 233 121 1 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 7 0 2 0 0 0 48 0 0 0 255 255 255 255 5 0 5 0 0 0 0 0 data 6 0x50005 0x0 0x1b23a290 0x2f3d 0x0 0x0 oops 1 2 java/io/ObjectOutputStream$BlockDataOutputStream
+ciMethodData java/io/ObjectOutputStream writeUTF (Ljava/lang/String;)V 2 12326 orig 264 56 157 31 117 0 0 0 0 232 63 18 25 0 0 0 0 128 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 33 121 1 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 48 0 0 0 255 255 255 255 5 0 5 0 0 0 0 0 data 6 0x50005 0x0 0x1b23a290 0x2f24 0x0 0x0 oops 1 2 java/io/ObjectOutputStream$BlockDataOutputStream
+ciMethodData java/io/ObjectOutputStream$BlockDataOutputStream writeUTF (Ljava/lang/String;)V 2 12326 orig 264 56 157 31 117 0 0 0 0 88 155 146 25 0 0 0 0 176 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 33 121 1 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 96 0 0 0 255 255 255 255 5 0 4 0 0 0 0 0 data 12 0x40005 0x0 0x1b23a290 0x2f24 0x0 0x0 0x70005 0x0 0x1b23a290 0x2f24 0x0 0x0 oops 2 2 java/io/ObjectOutputStream$BlockDataOutputStream 8 java/io/ObjectOutputStream$BlockDataOutputStream
+ciMethodData java/io/ObjectOutputStream$HandleTable assign (Ljava/lang/Object;)I 2 5786 orig 264 56 157 31 117 0 0 0 0 80 179 146 25 0 0 0 0 152 1 0 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 133 1 0 0 169 168 0 0 1 0 0 0 118 20 0 0 0 0 0 0 2 0 0 0 0 0 9 0 2 0 0 0 112 0 0 0 255 255 255 255 7 0 9 0 0 0 0 0 data 14 0x90007 0x13b9 0x30 0x15c 0xd0002 0x15c 0x18e007 0x1514 0x30 0x3 0x1c0002 0x3 0x250002 0x1517 oops 0
+ciMethodData java/io/ObjectOutputStream$HandleTable growEntries ()V 1 374 orig 264 56 157 31 117 0 0 0 0 200 183 146 25 0 0 0 0 104 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26 0 0 0 225 10 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 32 0 0 0 255 255 255 255 2 0 25 0 0 0 0 0 data 4 0x190002 0x15c 0x310002 0x15c oops 0
+ciMethodData java/io/ObjectOutputStream$HandleTable insert (Ljava/lang/Object;I)V 2 5609 orig 264 56 157 31 117 0 0 0 0 32 182 146 25 0 0 0 0 152 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134 1 0 0 25 163 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 64 0 0 0 255 255 255 255 2 0 2 0 0 0 0 0 data 8 0x20002 0x1463 0x120004 0x0 0x1b235330 0x768 0x1de9980 0x6eb oops 2 4 java/io/ObjectStreamClass 6 java/lang/String
+ciMethodData java/io/ObjectOutputStream writeClassDesc (Ljava/io/ObjectStreamClass;Z)V 2 8458 orig 264 56 157 31 117 0 0 0 0 40 74 18 25 0 0 0 0 192 2 0 0 64 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 1 0 0 41 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 17 0 2 0 0 0 104 1 0 0 255 255 255 255 7 0 1 0 0 0 0 0 data 45 0x10007 0x14d4 0x48 0xb31 0x50002 0xb31 0x80003 0xb31 0x138 0xc0007 0x0 0x98 0x14d4 0x140005 0x0 0x1b235710 0x14d4 0x0 0x0 0x1a0007 0x1192 0x48 0x342 0x1f0002 0x342 0x220003 0x342 0xa0 0x260005 0x0 0x1b235330 0x1192 0x0 0x0 0x290007 0x1192 0x48 0x0 0x2f0002 0x0 0x320003 0x0 0x28 0x380002 0x1192 oops 2 15 java/io/ObjectOutputStream$HandleTable 30 java/io/ObjectStreamClass
+ciMethodData java/io/ObjectOutputStream writeNull ()V 2 2965 orig 264 56 157 31 117 0 0 0 0 232 71 18 25 0 0 0 0 120 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 95 0 0 0 177 89 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 7 0 2 0 0 0 48 0 0 0 255 255 255 255 5 0 6 0 0 0 0 0 data 6 0x60005 0x0 0x1b23a290 0xb36 0x0 0x0 oops 1 2 java/io/ObjectOutputStream$BlockDataOutputStream
+ciMethodData java/io/ObjectOutputStream writeHandle (I)V 2 4616 orig 264 56 157 31 117 0 0 0 0 144 72 18 25 0 0 0 0 176 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103 0 0 0 9 141 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 7 0 2 0 0 0 96 0 0 0 255 255 255 255 5 0 6 0 0 0 0 0 data 12 0x60005 0x0 0x1b23a290 0x11a1 0x0 0x0 0x110005 0x0 0x1b23a290 0x11a1 0x0 0x0 oops 2 2 java/io/ObjectOutputStream$BlockDataOutputStream 8 java/io/ObjectOutputStream$BlockDataOutputStream
+ciMethodData java/io/ObjectOutputStream$BlockDataOutputStream writeInt (I)V 2 4621 orig 264 56 157 31 117 0 0 0 0 80 150 146 25 0 0 0 0 200 1 0 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103 0 0 0 49 141 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 6 0 2 0 0 0 120 0 0 0 255 255 255 255 7 0 9 0 0 0 0 0 data 15 0x90007 0x0 0x48 0x11a6 0x150002 0x11a6 0x220003 0x11a6 0x48 0x2a0005 0x0 0x0 0x0 0x0 0x0 oops 0
+ciMethodData java/io/ObjectStreamClass isProxy ()Z 2 4641 orig 264 56 157 31 117 0 0 0 0 112 70 17 25 0 0 0 0 48 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143 0 0 0 145 140 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 6 0 2 0 0 0 16 0 0 0 255 255 255 255 2 0 1 0 0 0 0 0 data 2 0x10002 0x1192 oops 0
+ciMethodData java/io/ObjectOutputStream writeNonProxyDesc (Ljava/io/ObjectStreamClass;Z)V 2 4641 orig 264 56 157 31 117 0 0 0 0 16 77 18 25 0 0 0 0 24 4 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143 0 0 0 145 140 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 59 0 2 0 0 0 192 2 0 0 255 255 255 255 5 0 6 0 0 0 0 0 data 88 0x60005 0x0 0x1b23a290 0x1192 0x0 0x0 0xe0007 0x1192 0x38 0x0 0x120003 0x0 0x18 0x160005 0x0 0x1b235710 0x1192 0x0 0x0 0x1f0007 0x1192 0x68 0x0 0x240005 0x0 0x0 0x0 0x0 0x0 0x270003 0x0 0x48 0x2cc005 0x0 0x1b235100 0x1191 0x1d1ab6d0 0x5 0x300005 0x0 0x1b235330 0x1196 0x0 0x0 0x390005 0x0 0x1b23a290 0x1196 0x0 0x0 0x3e0007 0x0 0x60 0x1196 0x420002 0x1196 0x450007 0x1191 0x30 0x5 0x490002 0x5 0x4e0005 0x0 0x1b235100 0x1191 0x1d1ab6d0 0x5 0x560005 0x0 0x1b23a290 0x1196 0x0 0x0 0x600005 0x0 0x1b23a290 0x1196 0x0 0x0 0x650005 0x0 0x1b235330 0x1196 0x0 0x0 0x690002 0x1196 oops 11 2 java/io/ObjectOutputStream$BlockDataOutputStream 15 java/io/ObjectOutputStream$HandleTable 34 java/io/ObjectOutputStream 36 org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream 40 java/io/ObjectStreamClass 46 java/io/ObjectOutputStream$BlockDataOutputStream 64 java/io/ObjectOutputStream 66 org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream 70 java/io/ObjectOutputStream$BlockDataOutputStream 76 java/io/ObjectOutputStream$BlockDataOutputStream 82 java/io/ObjectStreamClass
+ciMethodData java/io/Bits putLong ([BIJ)V 2 1290 orig 264 56 157 31 117 0 0 0 0 192 234 16 25 0 0 0 0 64 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 1 0 0 49 32 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/io/ObjectOutputStream writeString (Ljava/lang/String;Z)V 2 5721 orig 264 56 157 31 117 0 0 0 0 248 77 18 25 0 0 0 0 232 2 0 0 56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 218 0 0 0 249 171 0 0 1 0 0 0 72 20 0 0 0 0 0 0 2 0 0 0 0 0 20 0 2 0 0 0 144 1 0 0 255 255 255 255 7 0 5 0 0 0 0 0 data 50 0x50007 0x157f 0x38 0x0 0x90003 0x0 0x18 0xd0005 0x0 0x1b235710 0x157f 0x0 0x0 0x160005 0x0 0x1b23a290 0x1580 0x0 0x0 0x1f0007 0x0 0x98 0x1580 0x280005 0x0 0x1b23a290 0x1580 0x0 0x0 0x310005 0x0 0x1b23a290 0x1580 0x0 0x0 0x340003 0x1580 0x78 0x3d0005 0x0 0x0 0x0 0x0 0x0 0x460005 0x0 0x0 0x0 0x0 0x0 oops 4 9 java/io/ObjectOutputStream$HandleTable 15 java/io/ObjectOutputStream$BlockDataOutputStream 25 java/io/ObjectOutputStream$BlockDataOutputStream 31 java/io/ObjectOutputStream$BlockDataOutputStream
+ciMethodData java/io/ObjectStreamClass getSerialVersionUID ()J 2 4797 orig 264 56 157 31 117 0 0 0 0 136 48 17 25 0 0 0 0 232 1 0 0 64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 1 0 0 145 139 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 6 0 2 0 0 0 160 0 0 0 255 255 255 255 7 0 4 0 0 0 0 0 data 20 0x40007 0x1159 0x70 0x19 0xd0002 0x19 0x100002 0x19 0x130004 0x0 0x1583bba0 0x19 0x0 0x0 0x1d0005 0x0 0x1583bba0 0x1172 0x0 0x0 oops 2 10 java/lang/Long 16 java/lang/Long
+ciMethodData java/io/ObjectStreamClass$1 <init> (Ljava/io/ObjectStreamClass;)V 1 49 orig 264 56 157 31 117 0 0 0 0 232 138 18 25 0 0 0 0 56 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 0 0 0 201 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 16 0 0 0 255 255 255 255 2 0 6 0 0 0 0 0 data 2 0x60002 0x19 oops 0
+ciMethodData java/io/Bits putInt ([BII)V 2 1274 orig 264 56 157 31 117 0 0 0 0 56 233 16 25 0 0 0 0 48 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 231 0 0 0 153 32 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/io/ObjectStreamClass writeNonProxy (Ljava/io/ObjectOutputStream;)V 2 7681 orig 264 56 157 31 117 0 0 0 0 208 63 17 25 0 0 0 0 208 4 0 0 168 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 115 2 0 0 33 133 0 0 105 220 0 0 0 0 0 0 0 0 0 0 2 0 0 0 1 0 54 0 2 0 0 0 128 3 0 0 255 255 255 255 5 0 5 0 0 0 0 0 data 112 0x50005 0x0 0x1b235100 0x109f 0x1d1ab6d0 0x5 0xa0005 0x0 0x1b235330 0x10a4 0x0 0x0 0xd0005 0x0 0x1b235100 0x109f 0x1d1ab6d0 0x5 0x160007 0x10a4 0x88 0x0 0x1f0005 0x0 0x0 0x0 0x0 0x0 0x250007 0x0 0x20 0x0 0x2e0003 0x0 0x38 0x350007 0x0 0x20 0x10a4 0x410007 0x10a0 0x20 0x4 0x4d0007 0x10a4 0x20 0x0 0x580005 0x0 0x1b235100 0x109f 0x1d1ab6d0 0x5 0x610005 0x0 0x1b235100 0x109f 0x1d1ab6d0 0x5 0x6c0007 0x10a4 0x1a8 0x1b8c 0x7a0005 0x0 0x1ac96620 0x1b8c 0x0 0x0 0x7d0005 0x0 0x1b235100 0x1b84 0x1d1ab6d0 0x8 0x830005 0x0 0x1ac96620 0x1b8c 0x0 0x0 0x860005 0x0 0x1b235100 0x1b84 0x1d1ab6d0 0x8 0x8b0005 0x0 0x1ac96620 0x1b8c 0x0 0x0 0x8e0007 0x93b 0x80 0x1251 0x940005 0x0 0x1ac96620 0x1251 0x0 0x0 0x970005 0x0 0x1b235100 0x124a 0x1d1ab6d0 0x7 0x9d0003 0x1b8c 0xfffffffffffffe70 oops 19 2 java/io/ObjectOutputStream 4 org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream 8 java/io/ObjectStreamClass 14 java/io/ObjectOutputStream 16 org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream 49 java/io/ObjectOutputStream 51 org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream 55 java/io/ObjectOutputStream 57 org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream 65 java/io/ObjectStreamField 71 java/io/ObjectOutputStream 73 org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream 77 java/io/ObjectStreamField 83 java/io/ObjectOutputStream 85 org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream 89 java/io/ObjectStreamField 99 java/io/ObjectStreamField 105 java/io/ObjectOutputStream 107 org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream
+ciMethodData java/io/ObjectOutputStream writeLong (J)V 2 4648 orig 264 56 157 31 117 0 0 0 0 200 60 18 25 0 0 0 0 136 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134 1 0 0 17 133 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 48 0 0 0 255 255 255 255 5 0 5 0 0 0 0 0 data 6 0x50005 0x0 0x1b23a290 0x10a2 0x0 0x0 oops 1 2 java/io/ObjectOutputStream$BlockDataOutputStream
+ciMethodData java/io/ObjectOutputStream$BlockDataOutputStream writeLong (J)V 2 4648 orig 264 56 157 31 117 0 0 0 0 224 151 146 25 0 0 0 0 208 1 0 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134 1 0 0 17 133 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 6 0 2 0 0 0 120 0 0 0 255 255 255 255 7 0 10 0 0 0 0 0 data 15 0xa0007 0x0 0x48 0x10a2 0x160002 0x10a2 0x240003 0x10a2 0x48 0x2c0005 0x0 0x0 0x0 0x0 0x0 oops 0
+ciMethodData java/io/ObjectOutputStream writeShort (I)V 2 4653 orig 264 56 157 31 117 0 0 0 0 232 58 18 25 0 0 0 0 128 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 138 1 0 0 25 133 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 48 0 0 0 255 255 255 255 5 0 5 0 0 0 0 0 data 6 0x50005 0x0 0x1b23a290 0x10a3 0x0 0x0 oops 1 2 java/io/ObjectOutputStream$BlockDataOutputStream
+ciMethodData java/io/ObjectStreamField getTypeString ()Ljava/lang/String; 2 5125 orig 264 56 157 31 117 0 0 0 0 56 9 246 20 0 0 0 0 176 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 177 1 0 0 161 146 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 104 0 0 0 255 255 255 255 5 0 1 0 0 0 0 0 data 13 0x10005 0x0 0x1ac96620 0x1254 0x0 0x0 0x40007 0x1254 0x38 0x0 0x80003 0x0 0x18 oops 1 2 java/io/ObjectStreamField
+ciMethodData java/io/ObjectOutputStream writeTypeString (Ljava/lang/String;)V 2 5125 orig 264 56 157 31 117 0 0 0 0 64 65 18 25 0 0 0 0 32 2 0 0 168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 177 1 0 0 161 146 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 8 0 2 0 0 0 208 0 0 0 255 255 255 255 7 0 1 0 0 0 0 0 data 26 0x10007 0x1254 0x48 0x0 0x50002 0x0 0x80003 0x0 0xa0 0x100005 0x0 0x1b235710 0x1254 0x0 0x0 0x160007 0xa96 0x48 0x7be 0x1b0002 0x7be 0x1e0003 0x7be 0x28 0x240002 0xa96 oops 1 11 java/io/ObjectOutputStream$HandleTable
+ciMethodData java/io/ObjectOutputStream writeClassDescriptor (Ljava/io/ObjectStreamClass;)V 2 4645 orig 264 56 157 31 117 0 0 0 0 16 53 18 25 0 0 0 0 128 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 164 1 0 0 9 132 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 48 0 0 0 255 255 255 255 5 0 2 0 0 0 0 0 data 6 0x20005 0x0 0x1b235330 0x1081 0x0 0x0 oops 1 2 java/io/ObjectStreamClass
+ciMethodData java/io/ObjectOutputStream isCustomSubclass ()Z 2 5651 orig 264 56 157 31 117 0 0 0 0 208 74 18 25 0 0 0 0 16 2 0 0 144 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 153 160 0 0 1 0 0 0 7 20 0 0 0 0 0 0 2 0 0 0 2 0 62 0 2 0 0 0 200 0 0 0 255 255 255 255 5 0 1 0 0 0 0 0 data 25 0x10005 0x5f 0x1b235100 0x13ab 0x1d1ab6d0 0x9 0x40005 0x5f 0x1de9a10 0x13b4 0x0 0x0 0x90005 0x5f 0x1de9a10 0x13b4 0x0 0x0 0xce007 0x1407 0x38 0xd 0x100003 0xd 0x18 oops 4 2 java/io/ObjectOutputStream 4 org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream 8 java/lang/Class 14 java/lang/Class
+ciMethodData java/io/ObjectOutputStream annotateClass (Ljava/lang/Class;)V 2 4653 orig 264 56 157 31 117 0 0 0 0 128 45 18 25 0 0 0 0 40 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 105 129 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/io/ObjectStreamClass getSuperDesc ()Ljava/io/ObjectStreamClass; 2 5867 orig 264 56 157 31 117 0 0 0 0 160 67 17 25 0 0 0 0 48 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 89 167 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 6 0 2 0 0 0 16 0 0 0 255 255 255 255 2 0 1 0 0 0 0 0 data 2 0x10002 0x14eb oops 0
+instanceKlass org/gradle/internal/serialize/ExceptionPlaceholder$1
+instanceKlass org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream$2
+instanceKlass com/android/build/gradle/internal/pipeline/OriginalStream$$Lambda$409
+instanceKlass com/android/build/api/transform/DirectoryInput
+instanceKlass com/android/build/gradle/internal/pipeline/OriginalStream$$Lambda$408
+instanceKlass com/android/build/gradle/internal/pipeline/OriginalStream$$Lambda$407
+instanceKlass com/android/build/gradle/internal/pipeline/QualifiedContentImpl
+instanceKlass com/android/build/api/transform/JarInput
+instanceKlass com/android/build/gradle/internal/pipeline/OriginalStream$$Lambda$406
+instanceKlass org/gradle/api/internal/tasks/CacheableTaskOutputCompositeFilePropertyElementSpec
+instanceKlass com/android/build/gradle/internal/pipeline/TransformInvocationBuilder$1
+instanceKlass com/android/build/gradle/internal/pipeline/TransformOutputProviderImpl
+instanceKlass com/android/build/gradle/internal/pipeline/IntermediateFolderUtils$$Lambda$405
+instanceKlass com/android/build/gradle/internal/pipeline/IntermediateFolderUtils$$Lambda$404
+instanceKlass com/android/build/gradle/internal/pipeline/SubStream
+instanceKlass com/android/build/gradle/internal/pipeline/IntermediateFolderUtils
+instanceKlass com/android/build/api/transform/TransformInvocation
+instanceKlass com/android/build/gradle/internal/pipeline/TransformInvocationBuilder
+instanceKlass com/android/build/gradle/internal/pipeline/TransformTask$2
+instanceKlass com/android/build/gradle/internal/pipeline/ImmutableTransformInput
+instanceKlass com/android/build/gradle/internal/pipeline/TransformTask$$Lambda$403
+instanceKlass com/android/build/gradle/internal/pipeline/TransformTask$1
+instanceKlass com/android/tools/build/gradle/internal/profile/GradleTransformExecutionType$1
+instanceKlass com/android/ide/common/util/ReferenceHolder
+instanceKlass com/android/build/gradle/internal/scope/OutputScope$$Lambda$402
+instanceKlass com/android/build/gradle/internal/tasks/KnownFilesSaveData$$Lambda$401
+instanceKlass sun/misc/JavaAWTAccess
+instanceKlass sun/misc/JavaNetHttpCookieAccess
+instanceKlass sun/misc/JavaIOAccess
+instanceKlass com/google/common/base/Throwables
+instanceKlass com/android/build/gradle/internal/tasks/KnownFilesSaveData
+instanceKlass org/apache/commons/codec/binary/BaseNCodec
+instanceKlass org/apache/commons/codec/BinaryDecoder
+instanceKlass org/apache/commons/codec/Decoder
+instanceKlass org/apache/commons/codec/BinaryEncoder
+instanceKlass org/apache/commons/codec/Encoder
+instanceKlass com/google/common/hash/Hashing$Sha1Holder
+instanceKlass java/util/stream/Sink$ChainedInt
+instanceKlass java/util/stream/Sink$OfInt
+instanceKlass java/util/function/IntConsumer
+instanceKlass java/util/stream/StreamSpliterators$WrappingSpliterator$$Lambda$400
+instanceKlass com/android/build/gradle/tasks/PackageAndroidArtifact$$Lambda$399
+instanceKlass com/android/build/gradle/tasks/PackageAndroidArtifact$$Lambda$398
+instanceKlass com/android/build/gradle/tasks/PackageAndroidArtifact$$Lambda$397
+instanceKlass java/util/stream/Streams$2
+instanceKlass java/util/stream/Streams
+instanceKlass java/util/stream/Streams$ConcatSpliterator
+instanceKlass java/util/stream/Streams$RangeIntSpliterator
+instanceKlass java/util/stream/StreamSpliterators$AbstractWrappingSpliterator
+instanceKlass java/util/stream/AbstractPipeline$$Lambda$396
+instanceKlass com/google/common/collect/CollectSpliterators$1WithCharacteristics
+instanceKlass com/google/common/collect/CollectSpliterators
+instanceKlass com/google/common/collect/ImmutableSet$Indexed$$Lambda$395
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$394
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$393
+instanceKlass com/android/apkzlib/zip/Eocd$$Lambda$392
+instanceKlass com/android/apkzlib/zip/ExtraField$AlignmentSegment
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$391
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$390
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$389
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$388
+instanceKlass com/android/apkzlib/zip/ExtraField$Segment
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$387
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$386
+instanceKlass com/android/apkzlib/zip/CompressionResult
+instanceKlass com/google/common/util/concurrent/Futures$CallbackListener
+instanceKlass java/util/zip/Deflater
+instanceKlass com/android/apkzlib/zip/ZFile$2
+instanceKlass java/util/concurrent/LinkedBlockingDeque$Node
+instanceKlass com/android/apkzlib/zip/compress/ExecutorCompressor$$Lambda$385
+instanceKlass com/android/apkzlib/sign/ManifestGenerationExtension$1$$Lambda$384
+instanceKlass com/android/build/gradle/internal/incremental/InstantRunBuildContext$Artifact
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$383
+instanceKlass com/google/common/primitives/UnsignedInts
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$382
+instanceKlass com/android/apkzlib/zip/FileUseMap$1
+instanceKlass com/android/apkzlib/zip/ZFile$3
+instanceKlass java/util/function/Predicate$$Lambda$381
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$380
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$379
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$378
+instanceKlass com/android/builder/internal/packaging/PackagedFileUpdates
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$377
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$376
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$375
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$374
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$373
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$372
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$371
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager$$Lambda$370
+instanceKlass com/android/builder/internal/packaging/DexIncrementalRenameManager$$Lambda$369
+instanceKlass com/android/builder/internal/packaging/DexIncrementalRenameManager$$Lambda$368
+instanceKlass com/android/builder/internal/packaging/PackagedFileUpdate
+instanceKlass com/android/builder/internal/packaging/DexIncrementalRenameManager$$Lambda$367
+instanceKlass com/android/builder/internal/packaging/DexIncrementalRenameManager$Bucket
+instanceKlass com/android/builder/internal/packaging/DexFileNameSupplier
+instanceKlass java/util/stream/SortedOps$RefSortingSink$$Lambda$366
+instanceKlass java/util/stream/Collectors$$Lambda$365
+instanceKlass java/util/stream/Collectors$$Lambda$364
+instanceKlass com/android/builder/internal/packaging/DexIncrementalRenameManager$$Lambda$363
+instanceKlass java/util/Comparator$$Lambda$362
+instanceKlass com/android/builder/internal/packaging/DexIncrementalRenameManager$DexNameComparator
+instanceKlass com/android/builder/internal/packaging/DexIncrementalRenameManager$$Lambda$361
+instanceKlass com/android/builder/internal/packaging/DexIncrementalRenameManager$$Lambda$360
+instanceKlass com/android/builder/internal/packaging/DexIncrementalRenameManager$$Lambda$359
+instanceKlass com/android/builder/files/NativeLibraryAbiPredicate
+instanceKlass com/android/builder/internal/packaging/DexIncrementalRenameManager
+instanceKlass com/google/common/collect/Lists$ReverseList$1
+instanceKlass com/android/apkzlib/sign/ManifestGenerationExtension$$Lambda$358
+instanceKlass com/android/apkzlib/sign/ManifestGenerationExtension
+instanceKlass com/android/apkzlib/zip/AlignmentRules$$Lambda$357
+instanceKlass com/android/apkzlib/zfile/ZFiles
+instanceKlass com/android/apkzlib/zfile/ApkZFileCreator$1
+instanceKlass com/android/apkzlib/zip/AlignmentRules$$Lambda$356
+instanceKlass com/android/apkzlib/zfile/ApkZFileCreator
+instanceKlass com/android/apkzlib/zfile/ApkCreator
+instanceKlass com/android/apkzlib/zfile/ApkZFileCreatorFactory
+instanceKlass com/android/build/gradle/AndroidGradleOptions
+instanceKlass com/android/apkzlib/zfile/ApkCreatorFactory
+instanceKlass com/android/build/gradle/internal/packaging/ApkCreatorFactories
+instanceKlass com/android/builder/internal/packaging/IncrementalPackager
+instanceKlass com/android/apkzlib/zfile/ApkCreatorFactory$CreationData
+instanceKlass com/android/builder/packaging/PackagingUtils$$Lambda$355
+instanceKlass com/android/build/gradle/internal/packaging/IncrementalPackagerBuilder
+instanceKlass com/android/builder/files/IncrementalRelativeFileSets$$Lambda$354
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$353
+instanceKlass com/google/common/hash/Funnel
+instanceKlass com/google/common/hash/Funnels
+instanceKlass com/google/common/hash/Hashing$Crc32Holder
+instanceKlass com/android/apkzlib/utils/CachedFileContents
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$352
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$351
+instanceKlass com/android/apkzlib/zip/ZFile$$Lambda$350
+instanceKlass com/android/apkzlib/utils/IOExceptionFunction
+instanceKlass com/android/apkzlib/utils/IOExceptionRunnable
+instanceKlass com/android/apkzlib/zip/ZFileExtension
+instanceKlass com/android/apkzlib/zip/ProcessedAndRawByteSources
+instanceKlass com/android/apkzlib/zip/StoredEntry$$Lambda$349
+instanceKlass com/android/apkzlib/zip/StoredEntry
+instanceKlass com/android/apkzlib/zip/ExtraField
+instanceKlass com/android/apkzlib/zip/utils/MsDosDateTimeUtils
+instanceKlass com/android/apkzlib/zip/CentralDirectoryHeader
+instanceKlass com/google/common/util/concurrent/ImmediateFuture
+instanceKlass com/google/common/util/concurrent/Futures$2
+instanceKlass com/google/common/util/concurrent/CheckedFuture
+instanceKlass com/google/common/util/concurrent/AsyncFunction
+instanceKlass com/google/common/util/concurrent/GwtFuturesCatchingSpecialization
+instanceKlass com/android/apkzlib/zip/CentralDirectoryHeaderCompressInfo
+instanceKlass com/android/apkzlib/zip/EncodeUtils
+instanceKlass com/android/apkzlib/zip/GPFlags
+instanceKlass com/android/apkzlib/zip/CentralDirectory$$Lambda$348
+instanceKlass com/android/apkzlib/zip/CentralDirectory
+instanceKlass com/android/apkzlib/zip/Eocd$$Lambda$347
+instanceKlass com/android/apkzlib/utils/CachedSupplier
+instanceKlass com/android/apkzlib/zip/utils/LittleEndianUtils
+instanceKlass com/android/apkzlib/zip/ZipFieldInvariantMaxValue
+instanceKlass com/android/apkzlib/zip/ZipFieldInvariantNonNegative
+instanceKlass com/android/apkzlib/zip/ZipFieldInvariant
+instanceKlass com/android/apkzlib/zip/ZipField
+instanceKlass com/android/apkzlib/zip/Eocd
+instanceKlass com/android/apkzlib/zip/VerifyLogs$1
+instanceKlass com/android/apkzlib/zip/FileUseMapEntry$$Lambda$346
+instanceKlass com/android/apkzlib/zip/FileUseMapEntry$$Lambda$345
+instanceKlass com/android/apkzlib/zip/FileUseMapEntry
+instanceKlass com/android/apkzlib/zip/FileUseMap
+instanceKlass com/android/apkzlib/zip/ZFileOptions$$Lambda$344
+instanceKlass com/android/apkzlib/zip/VerifyLog
+instanceKlass com/android/apkzlib/zip/VerifyLogs
+instanceKlass com/android/apkzlib/zip/AlignmentRules$$Lambda$343
+instanceKlass com/android/apkzlib/zip/AlignmentRules
+instanceKlass com/android/apkzlib/zip/AlignmentRule
+instanceKlass com/android/apkzlib/zip/ZFileOptions$$Lambda$342
+instanceKlass com/android/apkzlib/zip/compress/ExecutorCompressor
+instanceKlass com/android/apkzlib/zip/utils/ByteTracker
+instanceKlass com/android/apkzlib/zip/Compressor
+instanceKlass com/android/apkzlib/zip/ZFileOptions
+instanceKlass com/google/common/util/concurrent/FutureCallback
+instanceKlass com/android/apkzlib/zip/ZFile
+instanceKlass com/google/common/base/Functions$ConstantFunction
+instanceKlass com/google/common/base/Functions
+instanceKlass com/google/common/base/Predicates$CompositionPredicate
+instanceKlass com/android/builder/files/IncrementalRelativeFileSets$$Lambda$341
+instanceKlass com/android/builder/files/RelativeFile
+instanceKlass com/android/builder/files/RelativeFiles
+instanceKlass com/android/builder/files/IncrementalRelativeFileSets
+instanceKlass com/android/build/gradle/internal/scope/OutputScope$$Lambda$340
+instanceKlass java/lang/invoke/LambdaForm$MH
+instanceKlass com/android/build/gradle/internal/scope/OutputScope$$Lambda$339
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass com/android/build/gradle/internal/scope/OutputScope$$Lambda$338
+instanceKlass com/android/build/gradle/internal/scope/OutputScope$TwoParameterizedSplitOutputAction
+instanceKlass com/android/build/gradle/internal/scope/OutputScope$$Lambda$337
+instanceKlass com/android/build/gradle/internal/scope/OutputScope$ParameterizedSplitOutputAction
+instanceKlass com/android/build/gradle/tasks/PackageAndroidArtifact$$Lambda$336
+instanceKlass com/android/build/gradle/internal/scope/OutputScope$SplitOutputAction
+instanceKlass com/android/build/gradle/tasks/PackageAndroidArtifact$$Lambda$335
+instanceKlass java/nio/file/SimpleFileVisitor
+instanceKlass com/android/builder/internal/compiler/DirectoryWalker$Builder$$Lambda$334
+instanceKlass com/google/common/base/Suppliers$MemoizingSupplier
+instanceKlass com/google/common/base/Suppliers$NonSerializableMemoizingSupplier
+instanceKlass com/android/builder/internal/compiler/DirectoryWalker$Builder$$Lambda$333
+instanceKlass com/android/builder/internal/compiler/DirectoryWalker$Builder$$Lambda$332
+instanceKlass com/android/builder/internal/compiler/DirectoryWalker$ExtensionSelector
+instanceKlass com/android/builder/internal/compiler/DirectoryWalker$Builder
+instanceKlass com/android/builder/internal/compiler/DirectoryWalker
+instanceKlass java/lang/invoke/LambdaForm$MH
+instanceKlass com/android/builder/core/AndroidBuilder$$Lambda$331
+instanceKlass com/android/builder/internal/compiler/ShaderProcessor
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/JarClasspathSnapshot
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/JarClasspathSnapshotData
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/DependencyToAll
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/JarSnapshotData
+instanceKlass java/util/Collections$3
+instanceKlass org/apache/tools/zip/UnrecognizedExtraField
+instanceKlass org/apache/tools/zip/ZipEightByteInteger
+instanceKlass org/apache/tools/zip/Zip64ExtendedInformationExtraField
+instanceKlass org/apache/tools/zip/JarMarker
+instanceKlass org/apache/tools/zip/AsiExtraField
+instanceKlass org/apache/tools/zip/UnixStat
+instanceKlass org/apache/tools/zip/ExtraFieldUtils
+instanceKlass org/apache/tools/zip/ExtraFieldUtils$UnparseableExtraField
+instanceKlass org/apache/tools/zip/AbstractUnicodeExtraField
+instanceKlass org/apache/tools/zip/ZipUtil
+instanceKlass org/apache/tools/zip/ZipShort
+instanceKlass org/apache/tools/zip/GeneralPurposeBit
+instanceKlass org/apache/tools/zip/UnparseableExtraFieldData
+instanceKlass org/apache/tools/zip/CentralDirectoryParsingZipExtraField
+instanceKlass org/apache/tools/zip/ZipFile$OffsetEntry
+instanceKlass org/apache/tools/zip/FallbackZipEncoding
+instanceKlass org/apache/tools/zip/ZipEncodingHelper$SimpleEncodingHolder
+instanceKlass org/apache/tools/zip/ZipEncoding
+instanceKlass org/apache/tools/zip/ZipEncodingHelper
+instanceKlass org/apache/tools/zip/ZipFile$2
+instanceKlass org/apache/tools/zip/ZipLong
+instanceKlass org/apache/tools/zip/ZipExtraField
+instanceKlass org/apache/tools/zip/ZipFile
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/DefaultJarSnapshotter$1
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/DefaultJarSnapshotCache$1
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/JarSnapshot
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/CachingJarSnapshotter$1
+instanceKlass org/gradle/api/internal/file/archive/ZipFileTree
+instanceKlass org/gradle/api/internal/file/collections/FileSystemMirroringFileTree
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/JarArchive
+instanceKlass com/google/common/collect/AbstractMapBasedMultimap$KeySet$1
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/DefaultDependentsSet
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/ClassSetAnalysisData
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/ClassAnalysis
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/asm/ClassRelevancyFilter
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/analyzer/CachingClassDependenciesAnalyzer$1
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/ClassDependentsAccumulator
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/analyzer/ClassFilesAnalyzer
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/RecompilationNotNecessary
+instanceKlass org/gradle/api/internal/tasks/SimpleWorkResult
+instanceKlass com/sun/tools/javac/jvm/Code$Chain
+instanceKlass com/sun/tools/javac/jvm/ClassWriter$StackMapTableFrame
+instanceKlass com/sun/tools/javac/jvm/Code$StackMapFrame
+instanceKlass com/sun/tools/javac/jvm/ClassFile$NameAndType
+instanceKlass com/sun/tools/javac/jvm/ClassWriter$1
+instanceKlass javax/tools/StandardLocation$2
+instanceKlass com/sun/tools/javac/model/FilteredMemberList$1
+instanceKlass com/sun/tools/javac/code/Types$UniqueType
+instanceKlass com/sun/tools/javac/jvm/Code$LocalVar$Range
+instanceKlass com/sun/tools/javac/jvm/Items
+instanceKlass com/sun/tools/javac/jvm/Code$LocalVar
+instanceKlass com/sun/tools/javac/jvm/Code$State
+instanceKlass com/sun/tools/javac/jvm/Code$1
+instanceKlass com/sun/tools/javac/jvm/Code
+instanceKlass com/sun/tools/javac/jvm/Gen$GenContext
+instanceKlass com/sun/tools/javac/jvm/Gen$3
+instanceKlass com/sun/tools/javac/comp/Lower$7
+instanceKlass com/sun/tools/javac/tree/TreeMaker$1
+instanceKlass com/sun/tools/javac/comp/Flow$2
+instanceKlass com/sun/tools/javac/util/Bits$1
+instanceKlass com/sun/tools/javac/util/Bits
+instanceKlass com/sun/tools/javac/comp/Flow$BaseAnalyzer$PendingExit
+instanceKlass com/sun/tools/javac/comp/Resolve$MostSpecificCheck
+instanceKlass com/sun/tools/javac/comp/Infer$IncorporationBinaryOp
+instanceKlass com/sun/tools/javac/code/Type$UndetVar$2
+instanceKlass com/sun/tools/javac/comp/Infer$MultiUndetVarListener
+instanceKlass com/sun/tools/javac/comp/Infer$BoundFilter
+instanceKlass com/sun/tools/javac/comp/Infer$InferenceContext$2
+instanceKlass com/sun/tools/javac/code/Type$UndetVar$UndetVarListener
+instanceKlass com/sun/tools/javac/comp/Resolve$MethodCheckContext
+instanceKlass com/sun/tools/javac/code/Flags
+instanceKlass com/sun/tools/javac/comp/Resolve$MethodResolutionContext$Candidate
+instanceKlass com/sun/tools/javac/comp/Resolve$LookupFilter
+instanceKlass com/sun/tools/javac/comp/Resolve$5$1
+instanceKlass com/sun/tools/javac/comp/Resolve$5
+instanceKlass com/sun/tools/javac/comp/Resolve$MethodResolutionContext
+instanceKlass com/sun/tools/javac/code/Scope$4$1
+instanceKlass com/sun/tools/javac/code/Scope$4
+instanceKlass com/sun/tools/javac/code/Scope$CompoundScope$CompoundScopeIterator
+instanceKlass com/sun/tools/javac/code/Scope$CompoundScope$2
+instanceKlass com/sun/tools/javac/comp/Check$ClashFilter
+instanceKlass com/sun/tools/javac/code/Types$ImplementationCache$Entry
+instanceKlass com/sun/tools/javac/main/JavaCompiler$2
+instanceKlass com/sun/tools/javac/comp/Annotate$AnnotateRepeatedContext
+instanceKlass com/sun/tools/javac/code/Types$27
+instanceKlass com/sun/tools/javac/code/Symbol$VarSymbol$2
+instanceKlass com/sun/tools/javac/comp/MemberEnter$6
+instanceKlass com/sun/tools/javac/comp/MemberEnter$5
+instanceKlass com/sun/tools/javac/code/SymbolMetadata
+instanceKlass com/sun/tools/javac/util/Pair
+instanceKlass com/sun/tools/javac/jvm/ClassReader$AnnotationDeproxy
+instanceKlass com/sun/tools/javac/jvm/ClassReader$ProxyVisitor
+instanceKlass com/sun/tools/javac/code/Scope$1
+instanceKlass com/sun/tools/javac/comp/Attr$15
+instanceKlass com/sun/tools/javac/jvm/ClassReader$25
+instanceKlass com/sun/tools/javac/comp/AttrContext
+instanceKlass com/sun/tools/javac/file/ZipFileIndex$Entry
+instanceKlass com/sun/tools/javac/file/ZipFileIndex$DirectoryEntry
+instanceKlass com/sun/tools/javac/file/ZipFileIndex$ZipDirectory
+instanceKlass com/sun/tools/javac/file/ZipFileIndex
+instanceKlass com/sun/tools/javac/file/ZipFileIndexArchive
+instanceKlass com/sun/tools/javac/util/Position$LineMapImpl
+instanceKlass com/sun/tools/javac/util/Position$LineMap
+instanceKlass com/sun/tools/javac/util/Position
+instanceKlass com/sun/tools/javac/parser/JavaTokenizer$BasicComment
+instanceKlass com/sun/tools/javac/tree/TreeInfo$2
+instanceKlass com/sun/tools/javac/parser/JavacParser$2
+instanceKlass com/sun/tools/javac/parser/JavaTokenizer$1
+instanceKlass com/sun/tools/javac/util/ArrayUtils
+instanceKlass com/sun/tools/javac/parser/JavacParser$1
+instanceKlass com/sun/tools/javac/tree/DocCommentTable
+instanceKlass com/sun/tools/javac/parser/JavacParser$ErrorRecoveryAction
+instanceKlass com/sun/tools/javac/parser/JavacParser$AbstractEndPosTable
+instanceKlass com/sun/tools/javac/tree/EndPosTable
+instanceKlass com/sun/tools/javac/parser/JavacParser
+instanceKlass com/sun/tools/javac/parser/UnicodeReader
+instanceKlass sun/misc/FloatingDecimal$HexFloatPattern
+instanceKlass com/sun/tools/javac/parser/Tokens$Comment
+instanceKlass com/sun/tools/javac/parser/Scanner
+instanceKlass com/sun/source/tree/LineMap
+instanceKlass com/sun/tools/javac/util/BaseFileManager$ContentCacheEntry
+instanceKlass com/sun/tools/javac/util/DiagnosticSource
+instanceKlass com/sun/tools/javac/util/ForwardingDiagnosticFormatter$ForwardingConfiguration
+instanceKlass com/sun/tools/javac/code/Types$DefaultSymbolVisitor
+instanceKlass com/sun/tools/javac/util/ForwardingDiagnosticFormatter
+instanceKlass com/sun/tools/javac/file/Locations$1
+instanceKlass com/sun/tools/javac/util/StringUtils
+instanceKlass com/sun/tools/javac/util/ListBuffer$1
+instanceKlass com/sun/tools/javac/api/MultiTaskListener
+instanceKlass com/sun/tools/javac/comp/TransTypes$1
+instanceKlass com/sun/tools/javac/jvm/Pool
+instanceKlass com/sun/tools/javac/comp/Lower$TreeBuilder
+instanceKlass com/sun/tools/javac/jvm/Gen$GenFinalizer
+instanceKlass com/sun/tools/javac/jvm/Items$Item
+instanceKlass com/sun/tools/javac/parser/JavaTokenizer
+instanceKlass com/sun/tools/javac/parser/ScannerFactory
+instanceKlass com/sun/tools/javac/parser/Tokens$Token
+instanceKlass com/sun/tools/javac/parser/Tokens
+instanceKlass com/sun/tools/javac/tree/DocTreeMaker
+instanceKlass com/sun/tools/javac/parser/Lexer
+instanceKlass com/sun/tools/javac/parser/ParserFactory
+instanceKlass com/sun/tools/javac/jvm/JNIWriter
+instanceKlass com/sun/tools/javac/code/Types$SignatureGenerator
+instanceKlass com/sun/tools/javac/jvm/ClassWriter$AttributeWriter
+instanceKlass com/sun/tools/javac/util/ByteBuffer
+instanceKlass com/sun/tools/javac/jvm/ClassFile
+instanceKlass com/sun/tools/javac/jvm/ClassReader$AttributeReader
+instanceKlass com/sun/tools/javac/util/MandatoryWarningHandler
+instanceKlass com/sun/tools/javac/tree/TreeInfo
+instanceKlass com/sun/tools/javac/comp/DeferredAttr$4
+instanceKlass com/sun/tools/javac/comp/DeferredAttr$3
+instanceKlass com/sun/tools/javac/comp/DeferredAttr$2
+instanceKlass com/sun/tools/javac/comp/DeferredAttr$DeferredAttrContext
+instanceKlass com/sun/tools/javac/comp/DeferredAttr$DeferredStuckPolicy
+instanceKlass com/sun/tools/javac/comp/DeferredAttr$DeferredTypeCompleter
+instanceKlass com/sun/tools/javac/comp/Infer$GraphStrategy
+instanceKlass com/sun/tools/javac/comp/Infer$InferenceContext
+instanceKlass javax/lang/model/element/TypeParameterElement
+instanceKlass com/sun/tools/javac/comp/Infer
+instanceKlass com/sun/tools/javac/code/DeferredLintHandler$1
+instanceKlass com/sun/tools/javac/code/DeferredLintHandler
+instanceKlass com/sun/tools/javac/code/TypeAnnotations
+instanceKlass com/sun/tools/javac/comp/TypeEnvs
+instanceKlass com/sun/tools/javac/comp/ConstFold
+instanceKlass javax/lang/model/element/AnnotationMirror
+instanceKlass com/sun/tools/javac/comp/Annotate
+instanceKlass com/sun/tools/javac/tree/TreeMaker$AnnotationBuilder
+instanceKlass com/sun/tools/javac/tree/TreeMaker
+instanceKlass com/sun/tools/javac/tree/JCTree$Factory
+instanceKlass com/sun/tools/javac/comp/Env
+instanceKlass com/sun/tools/javac/comp/Flow
+instanceKlass com/sun/source/util/SimpleTreeVisitor
+instanceKlass com/sun/tools/javac/comp/Attr$14
+instanceKlass javax/lang/model/type/UnionType
+instanceKlass com/sun/tools/javac/comp/Check$NestedCheckContext
+instanceKlass com/sun/source/tree/AnnotatedTypeTree
+instanceKlass com/sun/source/tree/TypeParameterTree
+instanceKlass com/sun/source/tree/SynchronizedTree
+instanceKlass com/sun/source/tree/ModifiersTree
+instanceKlass com/sun/source/tree/ErroneousTree
+instanceKlass com/sun/source/tree/TypeCastTree
+instanceKlass com/sun/source/tree/UnaryTree
+instanceKlass com/sun/source/tree/LiteralTree
+instanceKlass com/sun/source/tree/BinaryTree
+instanceKlass com/sun/source/tree/NewArrayTree
+instanceKlass com/sun/source/tree/ThrowTree
+instanceKlass com/sun/source/tree/ReturnTree
+instanceKlass com/sun/source/tree/BreakTree
+instanceKlass com/sun/source/tree/IfTree
+instanceKlass com/sun/source/tree/TryTree
+instanceKlass com/sun/source/tree/CaseTree
+instanceKlass com/sun/source/tree/BlockTree
+instanceKlass com/sun/source/tree/ImportTree
+instanceKlass com/sun/source/tree/AssertTree
+instanceKlass com/sun/source/tree/ContinueTree
+instanceKlass com/sun/source/tree/CatchTree
+instanceKlass com/sun/source/tree/IntersectionTypeTree
+instanceKlass com/sun/source/tree/SwitchTree
+instanceKlass com/sun/source/tree/WhileLoopTree
+instanceKlass com/sun/source/tree/ForLoopTree
+instanceKlass com/sun/source/tree/EnhancedForLoopTree
+instanceKlass com/sun/source/tree/PrimitiveTypeTree
+instanceKlass com/sun/source/tree/ArrayTypeTree
+instanceKlass com/sun/source/tree/ArrayAccessTree
+instanceKlass com/sun/source/tree/EmptyStatementTree
+instanceKlass com/sun/source/tree/UnionTypeTree
+instanceKlass com/sun/source/tree/ParenthesizedTree
+instanceKlass com/sun/source/tree/MemberReferenceTree
+instanceKlass com/sun/source/tree/DoWhileLoopTree
+instanceKlass com/sun/source/tree/VariableTree
+instanceKlass com/sun/source/tree/ParameterizedTypeTree
+instanceKlass com/sun/source/tree/InstanceOfTree
+instanceKlass com/sun/source/tree/LabeledStatementTree
+instanceKlass com/sun/source/tree/LambdaExpressionTree
+instanceKlass com/sun/source/tree/MethodInvocationTree
+instanceKlass com/sun/source/tree/ExpressionStatementTree
+instanceKlass com/sun/source/tree/CompoundAssignmentTree
+instanceKlass com/sun/source/tree/AssignmentTree
+instanceKlass com/sun/source/tree/ConditionalExpressionTree
+instanceKlass com/sun/source/tree/WildcardTree
+instanceKlass com/sun/tools/javac/api/Formattable$LocalizedString
+instanceKlass com/sun/tools/javac/api/Formattable
+instanceKlass com/sun/tools/javac/comp/Resolve$7
+instanceKlass com/sun/tools/javac/comp/Resolve$6
+instanceKlass com/sun/tools/javac/comp/Attr$ResultInfo
+instanceKlass com/sun/tools/javac/comp/Resolve$AbstractMethodCheck
+instanceKlass com/sun/tools/javac/comp/Resolve$2
+instanceKlass com/sun/tools/javac/comp/Resolve$LookupHelper
+instanceKlass com/sun/tools/javac/comp/Resolve$LogResolveHelper
+instanceKlass com/sun/tools/javac/comp/Resolve$MethodCheck
+instanceKlass com/sun/tools/javac/comp/Resolve
+instanceKlass com/sun/tools/javac/comp/Check$6
+instanceKlass com/sun/tools/javac/comp/Check$1
+instanceKlass com/sun/source/tree/AnnotationTree
+instanceKlass com/sun/tools/javac/tree/JCTree$Visitor
+instanceKlass com/sun/tools/javac/util/Warner
+instanceKlass com/sun/tools/javac/code/DeferredLintHandler$LintLogger
+instanceKlass com/sun/source/tree/NewClassTree
+instanceKlass com/sun/source/tree/MethodTree
+instanceKlass com/sun/tools/javac/comp/Infer$FreeTypeListener
+instanceKlass com/sun/tools/javac/comp/Check$CheckContext
+instanceKlass com/sun/tools/javac/comp/Check
+instanceKlass com/sun/tools/javac/code/Types$ImplementationCache
+instanceKlass com/sun/tools/javac/code/Types$3
+instanceKlass com/sun/tools/javac/util/JCDiagnostic
+instanceKlass com/sun/tools/javac/code/Types$DescriptorCache$FunctionDescriptor
+instanceKlass com/sun/tools/javac/code/Types$DescriptorCache
+instanceKlass com/sun/tools/javac/code/Scope$ScopeListener
+instanceKlass javax/lang/model/type/IntersectionType
+instanceKlass com/sun/tools/javac/code/Type$Mapping
+instanceKlass com/sun/tools/javac/code/Types$DefaultTypeVisitor
+instanceKlass com/sun/tools/javac/code/Types
+instanceKlass com/sun/tools/javac/code/Symtab$2
+instanceKlass com/sun/tools/javac/code/Symtab$1
+instanceKlass com/sun/tools/javac/code/Symbol$MethodSymbol$2
+instanceKlass com/sun/tools/javac/code/Scope$2
+instanceKlass com/sun/tools/javac/code/Scope$Entry
+instanceKlass com/sun/tools/javac/util/Filter
+instanceKlass com/sun/tools/javac/util/Assert
+instanceKlass java/lang/annotation/Repeatable
+instanceKlass javax/lang/model/type/NullType
+instanceKlass com/sun/tools/javac/code/Symtab
+instanceKlass com/sun/tools/javac/jvm/ClassReader$1
+instanceKlass com/sun/tools/javac/code/Attribute
+instanceKlass javax/lang/model/element/AnnotationValue
+instanceKlass com/sun/tools/javac/comp/Annotate$Worker
+instanceKlass javax/lang/model/type/ExecutableType
+instanceKlass javax/lang/model/type/NoType
+instanceKlass com/sun/tools/javac/code/Scope
+instanceKlass com/sun/tools/javac/code/Symbol$Completer
+instanceKlass com/sun/tools/javac/jvm/ClassReader
+instanceKlass com/sun/tools/javac/util/Convert
+instanceKlass com/sun/tools/javac/util/Name
+instanceKlass javax/lang/model/element/Name
+instanceKlass com/sun/tools/javac/util/Name$Table
+instanceKlass com/sun/tools/javac/util/Names
+instanceKlass com/sun/tools/javac/main/JavaCompiler$1
+instanceKlass com/sun/source/tree/ClassTree
+instanceKlass com/sun/source/tree/StatementTree
+instanceKlass com/sun/source/tree/MemberSelectTree
+instanceKlass com/sun/source/tree/IdentifierTree
+instanceKlass javax/lang/model/element/PackageElement
+instanceKlass javax/lang/model/element/TypeElement
+instanceKlass javax/lang/model/element/QualifiedNameable
+instanceKlass com/sun/source/tree/CompilationUnitTree
+instanceKlass com/sun/tools/javac/jvm/ClassReader$SourceCompleter
+instanceKlass com/sun/tools/javac/main/JavaCompiler
+instanceKlass com/sun/tools/javac/file/CacheFSInfo$1
+instanceKlass com/sun/tools/javac/main/CommandLine
+instanceKlass com/sun/tools/javac/parser/Parser
+instanceKlass com/sun/tools/javac/api/JavacTaskImpl$Filter
+instanceKlass javax/lang/model/util/Elements
+instanceKlass javax/lang/model/util/Types
+instanceKlass javax/annotation/processing/ProcessingEnvironment
+instanceKlass com/sun/tools/javac/main/Main
+instanceKlass com/sun/source/util/TreeScanner
+instanceKlass com/sun/source/tree/TreeVisitor
+instanceKlass com/sun/tools/doclint/DocLint
+instanceKlass com/sun/source/util/Plugin
+instanceKlass com/sun/source/util/TaskListener
+instanceKlass com/sun/tools/javac/api/ClientCodeWrapper
+instanceKlass com/sun/tools/javac/file/BaseFileObject
+instanceKlass com/sun/tools/javac/file/ZipFileIndexCache
+instanceKlass com/sun/tools/javac/file/FSInfo
+instanceKlass com/sun/tools/javac/code/Lint$AugmentVisitor
+instanceKlass com/sun/tools/javac/code/Attribute$Visitor
+instanceKlass com/sun/tools/javac/util/Log$1
+instanceKlass javax/tools/DiagnosticListener
+instanceKlass com/sun/tools/javac/util/JCDiagnostic$Factory$1
+instanceKlass com/sun/tools/javac/util/Options
+instanceKlass javax/lang/model/element/ExecutableElement
+instanceKlass javax/lang/model/element/Parameterizable
+instanceKlass javax/lang/model/type/WildcardType
+instanceKlass javax/lang/model/type/PrimitiveType
+instanceKlass javax/lang/model/type/TypeVariable
+instanceKlass javax/lang/model/element/VariableElement
+instanceKlass javax/lang/model/type/ErrorType
+instanceKlass javax/lang/model/type/DeclaredType
+instanceKlass javax/lang/model/type/ArrayType
+instanceKlass javax/lang/model/type/ReferenceType
+instanceKlass javax/lang/model/type/TypeMirror
+instanceKlass com/sun/tools/javac/code/AnnoConstruct
+instanceKlass javax/lang/model/element/Element
+instanceKlass javax/lang/model/AnnotatedConstruct
+instanceKlass com/sun/tools/javac/util/AbstractDiagnosticFormatter$SimpleConfiguration
+instanceKlass com/sun/source/tree/ExpressionTree
+instanceKlass com/sun/tools/javac/tree/JCTree
+instanceKlass com/sun/source/tree/Tree
+instanceKlass com/sun/tools/javac/api/DiagnosticFormatter$Configuration
+instanceKlass com/sun/tools/javac/code/Printer
+instanceKlass com/sun/tools/javac/code/Symbol$Visitor
+instanceKlass com/sun/tools/javac/code/Type$Visitor
+instanceKlass com/sun/tools/javac/util/AbstractDiagnosticFormatter
+instanceKlass com/sun/tools/javac/util/List$3
+instanceKlass com/sun/tools/javac/util/List$2
+instanceKlass com/sun/tools/javac/util/JavacMessages
+instanceKlass com/sun/tools/javac/api/Messages
+instanceKlass com/sun/tools/javac/util/JCDiagnostic$Factory
+instanceKlass com/sun/tools/javac/file/Locations$LocationHandler
+instanceKlass com/sun/tools/javac/file/Locations
+instanceKlass com/sun/tools/javac/util/BaseFileManager$ByteBufferCache
+instanceKlass com/sun/tools/javac/code/Lint
+instanceKlass javax/tools/JavaFileObject
+instanceKlass javax/tools/FileObject
+instanceKlass javax/tools/JavaFileManager$Location
+instanceKlass com/sun/tools/javac/file/JavacFileManager$Archive
+instanceKlass com/sun/tools/javac/file/RelativePath
+instanceKlass com/sun/tools/javac/util/BaseFileManager
+instanceKlass com/sun/tools/javac/util/Context$Factory
+instanceKlass javax/tools/Diagnostic
+instanceKlass com/sun/tools/javac/api/DiagnosticFormatter
+instanceKlass com/sun/tools/javac/util/Log$DiagnosticHandler
+instanceKlass com/sun/tools/javac/util/JCDiagnostic$DiagnosticPosition
+instanceKlass com/sun/tools/javac/util/AbstractLog
+instanceKlass com/sun/tools/javac/util/Context$Key
+instanceKlass com/sun/tools/javac/util/Context
+instanceKlass com/sun/tools/javac/main/OptionHelper
+instanceKlass javax/tools/StandardJavaFileManager
+instanceKlass com/sun/source/util/JavacTask
+instanceKlass javax/tools/JavaCompiler$CompilationTask
+instanceKlass com/sun/tools/javac/api/JavacTool
+instanceKlass org/gradle/api/internal/tasks/compile/JdkTools
+instanceKlass org/gradle/api/internal/tasks/compile/JavaCompilerArgumentsBuilder
+instanceKlass org/gradle/internal/Transformers$ToStringTransformer
+instanceKlass org/gradle/api/internal/tasks/compile/NormalizingJavaCompiler$1
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/IncrementalCompilationFinalizer
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/IncrementalCompilationInitializer
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/ClassSetAnalysisUpdater$1
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/ClassSetAnalysisUpdater
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/RecompilationSpecProvider
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/SourceToNameConverter
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/IncrementalCompilerDecorator
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/CompilationSourceDirs
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/ClasspathJarFinder
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/JarClasspathSnapshotFactory
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/JarClasspathSnapshotMaker
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/JarClasspathSnapshotWriter
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/JarClasspathSnapshotProvider
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/DefaultJarSnapshotter
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/CachingJarSnapshotter
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/analyzer/DefaultClassDependenciesAnalyzer
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/analyzer/CachingClassDependenciesAnalyzer
+instanceKlass org/gradle/language/base/internal/tasks/StaleClassCleaner
+instanceKlass org/gradle/language/base/internal/compile/CompilerUtil
+instanceKlass org/gradle/api/internal/tasks/compile/NormalizingJavaCompiler
+instanceKlass javax/tools/JavaFileManager
+instanceKlass org/gradle/api/internal/tasks/compile/JdkJavaCompiler
+instanceKlass org/gradle/api/internal/tasks/AbstractJavaToolChain$JavaToolProvider
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/JarSnapshotter
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/analyzer/ClassDependenciesAnalyzer
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/IncrementalCompilerFactory
+instanceKlass org/gradle/api/tasks/compile/JavaCompile$1
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/LocalJarClasspathSnapshotStore
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/LocalClassSetAnalysisStore
+instanceKlass org/gradle/api/internal/cache/Stash
+instanceKlass org/gradle/api/internal/cache/Loader
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/DefaultJarSnapshotCache
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/DependentsSet
+instanceKlass org/gradle/api/internal/cache/MinimalPersistentCache
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/jar/JarSnapshotCache
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/analyzer/ClassAnalysisCache
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/cache/DefaultGeneralCompileCaches
+instanceKlass org/gradle/api/internal/tasks/compile/ForkingJavaCompileSpec
+instanceKlass org/gradle/api/internal/tasks/compile/CommandLineJavaCompileSpec
+instanceKlass org/gradle/api/internal/tasks/compile/AbstractJavaCompileSpecFactory
+instanceKlass org/gradle/jvm/platform/internal/DefaultJavaPlatform
+instanceKlass com/android/build/gradle/tasks/JavaPreCompileTask$$Lambda$330
+instanceKlass com/android/build/gradle/tasks/JavaPreCompileTask$$Lambda$329
+instanceKlass com/android/build/gradle/internal/dependency/ArtifactCollectionWithExtraArtifact$ExtraComponentIdentifierImpl
+instanceKlass com/android/build/gradle/internal/dependency/ArtifactCollectionWithExtraArtifact$ExtraComponentIdentifier
+instanceKlass com/android/build/gradle/internal/dependency/ArtifactCollectionWithExtraArtifact$ExtraComponentArtifactIdentifier
+instanceKlass com/google/common/hash/Funnel
+instanceKlass com/google/common/hash/Funnels
+instanceKlass org/gradle/api/internal/changedetection/state/ZipTree
+instanceKlass org/gradle/api/internal/changedetection/state/ResourceTree
+instanceKlass com/google/common/collect/MultimapBuilder$ArrayListSupplier
+instanceKlass org/gradle/api/internal/changedetection/state/ClasspathEntrySnapshotBuilder$1
+instanceKlass org/gradle/api/internal/changedetection/state/ClasspathEntrySnapshotBuilder
+instanceKlass com/android/ide/common/build/SplitOutputMatcher$$Lambda$328
+instanceKlass com/android/ide/common/build/SplitOutputMatcher
+instanceKlass com/android/ide/common/blame/MergingLogPersistUtil$SourcePositionsSerializer
+instanceKlass com/android/ide/common/blame/MergingLogPersistUtil$$Lambda$327
+instanceKlass java/util/concurrent/ConcurrentHashMap$MapEntry
+instanceKlass com/android/ide/common/blame/SourceFileJsonTypeAdapter$1
+instanceKlass com/android/builder/internal/aapt/v2/QueueableAapt2$$Lambda$326
+instanceKlass com/android/builder/internal/aapt/v2/Aapt2QueuedResourceProcessor$$Lambda$325
+instanceKlass com/android/builder/internal/aapt/v2/Aapt2QueuedResourceProcessor$1
+instanceKlass com/android/ide/common/blame/MergingLogPersistUtil$$Lambda$324
+instanceKlass com/android/ide/common/blame/MergingLogPersistUtil
+instanceKlass com/android/tools/aapt2/Aapt2RenamingConventions
+instanceKlass com/android/utils/XmlUtils$PositionAwareStringBuilder
+instanceKlass com/android/ide/common/res2/CompileResourceRequest
+instanceKlass com/google/common/collect/LinkedListMultimap$NodeIterator
+instanceKlass com/google/common/collect/HashBasedTable$Factory
+instanceKlass java/util/concurrent/ConcurrentLinkedDeque$Node
+instanceKlass com/android/ide/common/res2/MergeWriter
+instanceKlass com/android/build/gradle/tasks/MergeResources$$Lambda$323
+instanceKlass com/android/ide/common/res2/ResourceSet$1
+instanceKlass com/android/ide/common/res2/ResourceSet$FolderData
+instanceKlass com/android/ide/common/res2/DataSet$1
+instanceKlass com/google/common/collect/LinkedListMultimap$ValueForKeyIterator
+instanceKlass com/google/common/collect/LinkedListMultimap$DistinctKeyIterator
+instanceKlass com/google/common/collect/Multimaps$AsMap$EntrySet$1
+instanceKlass com/android/resources/FolderTypeRelationship
+instanceKlass com/android/ide/common/res2/ValueResourceNameValidator
+instanceKlass com/android/ide/common/res2/ValueResourceParser2
+instanceKlass com/google/common/collect/LinkedListMultimap$KeyList
+instanceKlass com/android/ide/common/rendering/api/ResourceReference
+instanceKlass com/android/ide/common/res2/FileResourceNameValidator
+instanceKlass com/android/ide/common/resources/configuration/FolderConfiguration
+instanceKlass com/android/ide/common/res2/NoOpResourcePreprocessor
+instanceKlass com/android/ide/common/res2/DataFile
+instanceKlass com/android/ide/common/res2/NodeUtils
+instanceKlass com/google/common/io/CharSource
+instanceKlass com/android/ide/common/res2/DataItem
+instanceKlass com/android/ide/common/resources/configuration/Configurable
+instanceKlass com/android/ide/common/res2/DataMerger
+instanceKlass com/android/build/gradle/internal/LoggerWrapper$LoggerSupplier
+instanceKlass com/android/ide/common/resources/configuration/ResourceQualifier
+instanceKlass java/awt/image/RenderedImage
+instanceKlass com/android/builder/png/VectorDrawableRenderer
+instanceKlass com/android/build/gradle/tasks/MergeResources$$Lambda$322
+instanceKlass com/android/build/gradle/internal/tasks/IncrementalTask$$Lambda$321
+instanceKlass com/android/build/gradle/internal/tasks/IncrementalTask$$Lambda$320
+instanceKlass org/gradle/api/internal/changedetection/rules/FileChange
+instanceKlass com/android/builder/packaging/PackagingUtils
+instanceKlass org/gradle/api/internal/changedetection/changes/NoHistoryArtifactState
+instanceKlass com/android/build/gradle/internal/transforms/InstantRunTransform$$Lambda$319
+instanceKlass com/android/build/gradle/internal/pipeline/TransformTask$$Lambda$318
+instanceKlass org/gradle/api/internal/cache/DefaultFileContentCacheFactory$DefaultFileContentCache
+instanceKlass org/gradle/api/internal/tasks/compile/AnnotationProcessorDetector$AnnotationServiceLocator
+instanceKlass org/gradle/api/internal/cache/FileContentCacheFactory$Calculator
+instanceKlass org/gradle/api/internal/cache/FileContentCache
+instanceKlass org/gradle/api/internal/cache/DefaultFileContentCacheFactory
+instanceKlass com/android/build/gradle/internal/TaskManager$$Lambda$317
+instanceKlass com/android/build/gradle/tasks/PackageApplication$InstantRunResourcesConfigAction$$Lambda$316
+instanceKlass com/android/build/gradle/internal/ApplicationTaskManager$$Lambda$315
+instanceKlass com/android/build/gradle/internal/ApplicationTaskManager$$Lambda$314
+instanceKlass org/gradle/api/execution/TaskExecutionAdapter
+instanceKlass org/gradle/api/internal/AbstractTask$19
+instanceKlass com/android/build/gradle/internal/InstantRunTaskManager$$Lambda$313
+instanceKlass org/gradle/api/internal/AbstractTask$21
+instanceKlass com/android/build/gradle/internal/InstantRunTaskManager$$Lambda$312
+instanceKlass com/android/build/gradle/internal/InstantRunTaskManager$$Lambda$311
+instanceKlass com/android/build/gradle/tasks/PreColdSwapTask$ConfigAction
+instanceKlass com/android/build/gradle/tasks/ir/GenerateInstantRunAppInfoTask$ConfigAction
+instanceKlass com/android/build/gradle/internal/pipeline/OriginalStream$Builder$$Lambda$310
+instanceKlass com/android/build/gradle/tasks/ir/FastDeployRuntimeExtractorTask$ConfigAction
+instanceKlass com/android/build/gradle/internal/InstantRunTaskManager$$Lambda$309
+instanceKlass com/android/build/gradle/internal/InstantRunTaskManager$$Lambda$308
+instanceKlass com/android/build/gradle/internal/InstantRunTaskManager$$Lambda$307
+instanceKlass com/android/build/gradle/tasks/CheckManifestInInstantRunMode$ConfigAction
+instanceKlass com/android/build/gradle/internal/InstantRunTaskManager$$Lambda$306
+instanceKlass com/android/build/gradle/internal/InstantRunTaskManager$$Lambda$305
+instanceKlass com/android/build/gradle/internal/incremental/InstantRunVerifier$ClassBytesProvider
+instanceKlass com/android/build/gradle/internal/incremental/BuildInfoWriterTask$ConfigAction
+instanceKlass com/android/build/gradle/internal/incremental/BuildInfoLoaderTask$ConfigAction
+instanceKlass com/android/build/gradle/internal/TaskManager$$Lambda$304
+instanceKlass com/android/build/gradle/internal/InstantRunTaskManager
+instanceKlass com/android/build/gradle/internal/incremental/InstantRunAnchorTaskConfigAction
+instanceKlass org/gradle/util/GradleVersion
+instanceKlass com/google/common/base/Preconditions
+instanceKlass org/gradle/internal/serialize/ExceptionPlaceholder
+instanceKlass com/google/common/collect/ImmutableSet$SerializedForm
+instanceKlass com/android/tools/idea/gradle/run/OutputBuildAction$PostBuildProjectModels
+instanceKlass org/gradle/tooling/model/Model
+instanceKlass com/android/tools/idea/gradle/run/OutputBuildAction
+instanceKlass org/gradle/tooling/internal/consumer/versioning/VersionDetails
+instanceKlass org/gradle/tooling/BuildAction
+instanceKlass org/gradle/tooling/internal/consumer/connection/HasCompatibilityMapping
+instanceKlass org/gradle/tooling/BuildController
+instanceKlass org/gradle/tooling/internal/adapter/TargetTypeProvider
+instanceKlass org/gradle/tooling/internal/consumer/connection/InternalBuildActionAdapter
+instanceKlass org/gradle/tooling/internal/protocol/InternalBuildAction
+instanceKlass org/gradle/internal/classpath/DefaultCachedClasspathTransformer$1
+instanceKlass org/gradle/internal/serialize/ExceptionReplacingObjectInputStream$1
+instanceKlass org/gradle/tooling/internal/provider/serialization/WellKnownClassLoaderRegistry$2
+instanceKlass org/gradle/tooling/internal/provider/serialization/DefaultPayloadClassLoaderRegistry$2
+instanceKlass java/net/UrlDeserializedState
+instanceKlass org/gradle/internal/remote/internal/inet/SocketConnection$1
+instanceKlass com/google/common/cache/LocalCache$HashIterator
+instanceKlass org/gradle/internal/work/DefaultWorkerLeaseService$1
+instanceKlass org/gradle/workers/internal/WorkerDaemonClientsManager$StopSessionScopedWorkers$1
+instanceKlass com/google/protobuf/ByteString$CodedBuilder
+instanceKlass com/google/wireless/android/play/playlog/proto/ClientAnalytics$LogEventKeyValuesOrBuilder
+instanceKlass com/google/wireless/android/play/playlog/proto/ClientAnalytics$ExperimentIdsOrBuilder
+instanceKlass com/google/wireless/android/play/playlog/proto/ClientAnalytics$AppUsage1pLogEventOrBuilder
+instanceKlass com/google/wireless/android/play/playlog/proto/ClientAnalytics$NetworkConnectionInfoOrBuilder
+instanceKlass com/google/wireless/android/play/playlog/proto/ClientAnalytics$ActiveExperimentsOrBuilder
+instanceKlass com/google/wireless/android/play/playlog/proto/ClientAnalytics$LogEventOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/AndroidStudioEvent$EventKind$1
+instanceKlass com/google/wireless/android/sdk/stats/AndroidStudioEvent$EventCategory$1
+instanceKlass com/google/wireless/android/sdk/stats/StudioProjectChangeOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/LayoutEditorEventOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/MachineDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/JvmDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/AdbAssistantStatsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/UIActionStatsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/GradleSyncStatsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/ApkAnalyzerStatsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/LayoutInspectorEventOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/LldbPerformanceStatsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/ApkDebugProjectOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/AndroidProfilerEventOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/KotlinSupportOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/LLDBFrontendDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/EmulatorUiEventOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/MetaMetricsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/EmulatorHostOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/TestRunOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/GfxTracingDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/HypervisorOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/ProductDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/EmulatorDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/InstantRunOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/StudioCrashOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/DeviceInfoOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/GradleBuildDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/FirebaseErrorDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/TestRecorderDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/LldbSessionStartDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/EmulatorPerformanceStatsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/FirebaseContextDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/AndroidProfilerDbStatsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/LldbSessionEndDetailsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/AppLinksAssistantEventOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/StudioPerformanceStatsOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/AndroidStudioEventOrBuilder
+instanceKlass com/android/builder/profile/ChromeTracingProfileConverter$2
+instanceKlass com/google/protobuf/TextFormatEscaper$1
+instanceKlass com/google/protobuf/TextFormatEscaper$ByteSequence
+instanceKlass com/google/protobuf/TextFormatEscaper
+instanceKlass com/google/protobuf/TextFormat$1
+instanceKlass com/google/protobuf/GeneratedMessageV3$FieldAccessorTable$RepeatedFieldAccessor
+instanceKlass com/google/protobuf/GeneratedMessageV3$FieldAccessorTable$SingularFieldAccessor
+instanceKlass com/google/protobuf/GeneratedMessageV3$FieldAccessorTable$OneofAccessor
+instanceKlass com/google/protobuf/GeneratedMessageV3$FieldAccessorTable$FieldAccessor
+instanceKlass com/google/protobuf/GeneratedMessageV3$FieldAccessorTable
+instanceKlass com/google/protobuf/Descriptors$1
+instanceKlass com/google/protobuf/Descriptors$DescriptorPool$DescriptorIntPair
+instanceKlass com/google/protobuf/Descriptors$OneofDescriptor
+instanceKlass com/google/protobuf/Descriptors
+instanceKlass com/google/protobuf/Descriptors$DescriptorPool
+instanceKlass com/google/protobuf/SmallSortedMap$EmptySet$2
+instanceKlass com/google/protobuf/SmallSortedMap$EmptySet$1
+instanceKlass com/google/protobuf/SmallSortedMap$EmptySet
+instanceKlass com/google/protobuf/LazyFieldLite
+instanceKlass com/google/protobuf/FieldSet
+instanceKlass com/google/protobuf/DescriptorProtos$EnumValueOptionsOrBuilder
+instanceKlass com/google/protobuf/DescriptorProtos$EnumValueDescriptorProtoOrBuilder
+instanceKlass com/google/protobuf/DescriptorProtos$EnumOptionsOrBuilder
+instanceKlass com/google/protobuf/DescriptorProtos$EnumDescriptorProtoOrBuilder
+instanceKlass com/google/protobuf/DescriptorProtos$FieldDescriptorProto$Type$1
+instanceKlass com/google/protobuf/DescriptorProtos$FieldDescriptorProto$Label$1
+instanceKlass com/google/protobuf/DescriptorProtos$FieldOptionsOrBuilder
+instanceKlass com/google/protobuf/DescriptorProtos$FieldDescriptorProtoOrBuilder
+instanceKlass com/google/protobuf/DescriptorProtos$MessageOptionsOrBuilder
+instanceKlass com/google/protobuf/DescriptorProtos$DescriptorProtoOrBuilder
+instanceKlass com/google/protobuf/DescriptorProtos$SourceCodeInfoOrBuilder
+instanceKlass com/google/protobuf/DescriptorProtos$FileOptionsOrBuilder
+instanceKlass com/google/protobuf/GeneratedMessageV3$ExtendableMessageOrBuilder
+instanceKlass com/google/protobuf/DescriptorProtos$FileDescriptorProtoOrBuilder
+instanceKlass com/google/wireless/android/sdk/stats/AndroidStudioStats$1
+instanceKlass com/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner
+instanceKlass com/google/wireless/android/sdk/stats/AndroidStudioStats
+instanceKlass com/google/protobuf/TextFormat$TextGenerator
+instanceKlass com/google/protobuf/TextFormat$Parser$Builder
+instanceKlass com/google/protobuf/TextFormat$Parser
+instanceKlass com/google/protobuf/TextFormat$Printer
+instanceKlass com/google/protobuf/TextFormat
+instanceKlass com/android/builder/profile/ChromeTracingProfileConverter$ProjectHolder$$Lambda$303
+instanceKlass com/android/builder/profile/ChromeTracingProfileConverter$$Lambda$302
+instanceKlass com/android/builder/profile/ChromeTracingProfileConverter$ProjectHolder
+instanceKlass com/android/builder/profile/ChromeTracingProfileConverter$$Lambda$301
+instanceKlass com/google/protobuf/ByteString$ArraysByteArrayCopier
+instanceKlass com/google/protobuf/Internal
+instanceKlass com/google/protobuf/ByteString$ByteIterator
+instanceKlass com/google/protobuf/ByteString$ByteArrayCopier
+instanceKlass com/google/protobuf/ByteString
+instanceKlass com/google/protobuf/UnknownFieldSet$Builder
+instanceKlass com/google/protobuf/CodedInputStream
+instanceKlass com/android/builder/profile/ChromeTracingProfileConverter
+instanceKlass com/google/protobuf/Utf8$Processor
+instanceKlass com/google/protobuf/Utf8
+instanceKlass com/google/protobuf/WireFormat
+instanceKlass com/google/protobuf/UnsafeUtil$1
+instanceKlass com/google/protobuf/UnsafeUtil
+instanceKlass com/google/protobuf/ByteOutput
+instanceKlass com/google/common/cache/LocalCache$WriteThroughEntry
+instanceKlass com/google/common/cache/LocalCache$HashIterator
+instanceKlass java/time/LocalTime$1
+instanceKlass java/time/format/DateTimeFormatterBuilder$3
+instanceKlass java/time/Month$1
+instanceKlass java/time/temporal/WeekFields$ComputedDayOfField
+instanceKlass java/time/temporal/WeekFields
+instanceKlass java/time/format/DateTimePrintContext
+instanceKlass java/time/zone/ZoneOffsetTransition
+instanceKlass java/time/zone/Ser
+instanceKlass java/time/zone/ZoneRulesProvider$1
+instanceKlass java/time/zone/ZoneRulesProvider
+instanceKlass java/time/Clock
+instanceKlass org/apache/tools/ant/IntrospectionHelper$AttributeSetter
+instanceKlass org/apache/tools/ant/IntrospectionHelper$NestedCreator
+instanceKlass org/apache/tools/ant/IntrospectionHelper
+instanceKlass com/android/dx/rop/type/Type
+instanceKlass com/android/dx/rop/cst/Constant
+instanceKlass com/android/dx/rop/code/RegisterSpec$ForComparison
+instanceKlass com/android/dx/rop/code/RegisterSpec
+instanceKlass com/android/dx/rop/type/TypeBearer
+instanceKlass com/android/dx/util/ToHuman
+instanceKlass com/android/dx/rop/type/Prototype
+instanceKlass com/android/dx/cf/direct/ClassPathOpener$FileNameFilter
+instanceKlass com/android/dx/cf/direct/ClassPathOpener$Consumer
+instanceKlass com/android/dx/cf/direct/AttributeFactory
+instanceKlass com/android/dx/command/dexer/Main
+instanceKlass com/android/builder/internal/compiler/PreProcessCache$Key
+instanceKlass com/android/builder/internal/compiler/PreProcessCache$BaseItem
+instanceKlass com/android/builder/internal/compiler/PreProcessCache
+instanceKlass com/android/build/gradle/BasePlugin$1$$Lambda$300
+instanceKlass com/android/ide/common/util/JvmWideVariable$$Lambda$299
+instanceKlass com/android/ide/common/util/JvmWideVariable$$Lambda$298
+instanceKlass com/android/ide/common/internal/ExecutorSingleton$$Lambda$297
+instanceKlass com/android/ide/common/util/JvmWideVariable$$Lambda$296
+instanceKlass com/android/ide/common/internal/ExecutorSingleton
+instanceKlass com/android/build/gradle/internal/BuildSessionImpl$$Lambda$295
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass org/gradle/tooling/internal/provider/serialization/SerializedPayload
+instanceKlass org/gradle/tooling/internal/provider/serialization/WellKnownClassLoaderRegistry$1
+instanceKlass org/gradle/tooling/internal/provider/serialization/DefaultPayloadClassLoaderRegistry$1
+instanceKlass org/gradle/tooling/internal/provider/BuildActionResult
+instanceKlass org/gradle/tooling/internal/provider/serialization/DefaultPayloadClassLoaderRegistry$DetailsToClassLoaderTransformer
+instanceKlass org/gradle/tooling/internal/provider/serialization/DefaultPayloadClassLoaderRegistry$ClassLoaderToDetailsTransformer
+instanceKlass org/gradle/tooling/internal/provider/serialization/DefaultPayloadClassLoaderRegistry
+instanceKlass org/gradle/tooling/internal/provider/serialization/ClassLoaderDetails
+instanceKlass org/gradle/tooling/internal/provider/serialization/SerializeMap
+instanceKlass org/gradle/tooling/internal/provider/serialization/DeserializeMap
+instanceKlass org/gradle/tooling/internal/provider/serialization/WellKnownClassLoaderRegistry
+instanceKlass org/gradle/tooling/internal/provider/serialization/ModelClassLoaderFactory
+instanceKlass org/gradle/tooling/internal/provider/serialization/DaemonSidePayloadClassLoaderFactory
+instanceKlass org/gradle/internal/logging/text/AbstractStyledTextOutput$StyleOverrideTextOutput
+instanceKlass org/gradle/execution/taskgraph/DefaultTaskExecutionPlan$7
+instanceKlass org/gradle/execution/taskgraph/DefaultTaskExecutionPlan$12
+instanceKlass org/gradle/api/internal/changedetection/state/MapValueSnapshot
+instanceKlass com/android/builder/tasks/WorkQueue$$Lambda$294
+instanceKlass com/android/build/gradle/tasks/ProcessAndroidResources$$Lambda$293
+instanceKlass com/google/gson/internal/LinkedTreeMap$LinkedTreeMapIterator
+instanceKlass com/google/common/io/ByteArrayDataOutput
+instanceKlass com/google/common/io/ByteArrayDataInput
+instanceKlass com/google/common/io/ByteStreams
+instanceKlass com/android/ide/common/xml/ManifestData$KeepClass
+instanceKlass com/android/ide/common/xml/ManifestData$Activity
+instanceKlass com/android/xml/AndroidManifest
+instanceKlass com/android/ide/common/xml/ManifestData
+instanceKlass com/android/ide/common/xml/AndroidManifestParser
+instanceKlass com/android/builder/symbols/SymbolIo$$Lambda$292
+instanceKlass com/android/builder/symbols/RGeneration$$Lambda$291
+instanceKlass com/android/builder/symbols/RGeneration
+instanceKlass com/android/builder/symbols/SymbolIo$$Lambda$290
+instanceKlass com/android/io/IAbstractFile
+instanceKlass com/android/builder/symbols/SymbolUtils
+instanceKlass com/google/common/collect/Tables$AbstractCell
+instanceKlass com/google/common/collect/StandardTable$CellIterator
+instanceKlass com/google/common/collect/ImmutableTable$Builder
+instanceKlass com/android/builder/symbols/SymbolIo$AaptHandler$$Lambda$289
+instanceKlass java/util/Comparator$$Lambda$288
+instanceKlass com/android/builder/symbols/SymbolIo$AaptHandler$$Lambda$287
+instanceKlass com/android/builder/symbols/Symbol$Companion
+instanceKlass com/android/builder/symbols/Symbol
+instanceKlass com/android/builder/symbols/SymbolIo$SymbolData
+instanceKlass com/android/builder/symbols/SymbolIo$$Lambda$286
+instanceKlass com/android/builder/symbols/SymbolIo$SymbolFilter
+instanceKlass com/google/common/collect/AbstractTable
+instanceKlass com/google/common/collect/Tables$1
+instanceKlass com/google/common/collect/RowSortedTable
+instanceKlass com/google/common/collect/Table$Cell
+instanceKlass com/google/common/collect/Tables
+instanceKlass com/android/builder/symbols/SymbolTable$Builder$symbols$1
+instanceKlass com/android/builder/symbols/SymbolTable$Builder
+instanceKlass com/android/builder/symbols/SymbolTable$Companion
+instanceKlass com/android/builder/symbols/SymbolTable
+instanceKlass com/android/builder/symbols/SymbolIo$$Lambda$285
+instanceKlass com/android/builder/symbols/SymbolIo$BaseHandler
+instanceKlass com/android/builder/symbols/SymbolIo$StyleableIndexHandler
+instanceKlass com/android/builder/symbols/SymbolIo
+instanceKlass com/android/builder/internal/aapt/AaptQueueThreadContext$$Lambda$284
+instanceKlass com/google/common/base/MoreObjects$ToStringHelper$ValueHolder
+instanceKlass com/google/common/base/MoreObjects$ToStringHelper
+instanceKlass com/android/builder/internal/aapt/AaptUtils$$Lambda$283
+instanceKlass java/util/function/Predicate$$Lambda$282
+instanceKlass com/android/builder/internal/aapt/AaptUtils$$Lambda$281
+instanceKlass com/android/builder/internal/aapt/AaptUtils$$Lambda$280
+instanceKlass com/android/builder/internal/aapt/AaptUtils
+instanceKlass java/util/stream/ForEachOps$ForEachOp
+instanceKlass java/util/stream/ForEachOps
+instanceKlass com/android/builder/internal/aapt/v2/AaptV2CommandBuilder$$Lambda$279
+instanceKlass com/android/builder/internal/aapt/v2/AaptV2CommandBuilder$$Lambda$278
+instanceKlass java/nio/file/Files$$Lambda$277
+instanceKlass java/nio/file/Files$$Lambda$276
+instanceKlass java/nio/file/FileTreeIterator
+instanceKlass com/android/builder/internal/aapt/v2/AaptV2CommandBuilder$$Lambda$275
+instanceKlass com/android/builder/internal/aapt/v2/AaptV2CommandBuilder
+instanceKlass com/android/builder/png/AaptProcess$NotifierProcessOutput
+instanceKlass com/android/builder/tasks/JobContext
+instanceKlass com/android/utils/GrabProcessOutput
+instanceKlass com/android/builder/tasks/BooleanLatch
+instanceKlass com/android/builder/png/AaptProcess$ProcessOutputFacade
+instanceKlass com/android/utils/GrabProcessOutput$IProcessOutput
+instanceKlass com/android/builder/png/AaptProcess
+instanceKlass java/lang/ProcessImpl$2
+instanceKlass java/lang/ProcessBuilder
+instanceKlass com/android/builder/png/AaptProcess$Builder
+instanceKlass com/android/builder/internal/aapt/v2/QueueableAapt2$$Lambda$274
+instanceKlass com/android/builder/tasks/WorkQueue$QueueTask
+instanceKlass com/android/builder/internal/aapt/v2/Aapt2QueuedResourceProcessor$$Lambda$273
+instanceKlass com/android/builder/internal/aapt/v2/Aapt2QueuedResourceProcessor$2
+instanceKlass com/android/builder/internal/aapt/AaptPackageConfig
+instanceKlass com/android/builder/internal/aapt/AaptPackageConfig$Builder
+instanceKlass com/android/build/gradle/internal/scope/SplitList$$Lambda$272
+instanceKlass com/android/builder/tasks/WorkQueue
+instanceKlass com/android/builder/internal/aapt/AaptQueueThreadContext
+instanceKlass com/android/builder/internal/aapt/v2/Aapt2QueuedResourceProcessor$Builder
+instanceKlass com/android/builder/tasks/Job
+instanceKlass com/android/builder/tasks/Task
+instanceKlass com/android/builder/tasks/QueueThreadContext
+instanceKlass com/android/builder/internal/aapt/QueuedResourceProcessor
+instanceKlass com/android/ide/common/internal/ResourceProcessor
+instanceKlass com/android/builder/internal/aapt/AbstractAapt
+instanceKlass com/android/build/gradle/internal/aapt/AaptGradleFactory$1
+instanceKlass com/android/build/gradle/internal/aapt/AaptGradleFactory$FilteringLogger
+instanceKlass com/android/ide/common/process/TeeProcessOutputHandler
+instanceKlass com/android/build/gradle/internal/aapt/AaptGradleFactory
+instanceKlass com/android/build/gradle/tasks/ProcessAndroidResources$$Lambda$271
+instanceKlass com/android/ide/common/blame/MergingLogRewriter
+instanceKlass com/android/ide/common/blame/parser/aapt/AbstractAaptOutputParser
+instanceKlass com/android/ide/common/blame/parser/aapt/Aapt2OutputParser
+instanceKlass com/android/ide/common/blame/parser/ToolOutputParser
+instanceKlass com/android/ide/common/process/BaseProcessOutputHandler
+instanceKlass com/google/gson/internal/ConstructorConstructor$6
+instanceKlass com/android/build/gradle/internal/scope/SplitList$Record
+instanceKlass org/apache/commons/io/IOUtils
+instanceKlass org/apache/commons/io/Charsets
+instanceKlass org/apache/commons/io/filefilter/IOFileFilter
+instanceKlass org/apache/commons/io/FileUtils
+instanceKlass com/google/gson/internal/LinkedTreeMap$Node
+instanceKlass com/google/gson/internal/LinkedTreeMap$1
+instanceKlass com/android/ide/common/build/ApkInfo$1
+instanceKlass org/gradle/cache/internal/DefaultMultiProcessSafePersistentIndexedCache$3
+instanceKlass org/gradle/cache/internal/AsyncCacheAccessDecoratedCache$3
+instanceKlass com/google/common/collect/Maps$10
+instanceKlass org/gradle/api/internal/changedetection/rules/OutputFilesTaskStateChanges$1
+instanceKlass org/gradle/cache/internal/btree/BTreePersistentIndexedCache$DataBlockUpdateResult
+instanceKlass com/google/gson/internal/Streams
+instanceKlass com/android/build/gradle/internal/scope/BuildOutputs$$Lambda$270
+instanceKlass com/android/build/gradle/internal/scope/BuildOutputs$$Lambda$269
+instanceKlass com/android/build/gradle/internal/scope/BuildOutputs$$Lambda$268
+instanceKlass com/google/common/io/Closer$SuppressingSuppressor
+instanceKlass com/google/common/io/Closer$Suppressor
+instanceKlass com/google/common/io/Closer
+instanceKlass com/google/common/io/CharSink
+instanceKlass com/android/builder/core/AndroidBuilder$1
+instanceKlass com/android/manifmerger/MergingReport
+instanceKlass com/google/common/io/CharStreams
+instanceKlass com/google/common/io/LineBuffer
+instanceKlass com/google/common/io/LineReader
+instanceKlass com/google/common/collect/AbstractMapBasedMultimap$AsMap$AsMapIterator
+instanceKlass com/google/common/collect/MultimapBuilder$ArrayListSupplier
+instanceKlass com/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys
+instanceKlass com/google/common/collect/MultimapBuilder
+instanceKlass com/google/common/collect/ImmutableMultimap$Builder
+instanceKlass com/android/ide/common/xml/XmlAttributeSortOrder$3
+instanceKlass com/android/ide/common/xml/XmlPrettyPrinter
+instanceKlass com/android/ide/common/xml/XmlAttributeSortOrder$2
+instanceKlass com/android/ide/common/xml/XmlAttributeSortOrder$1
+instanceKlass com/android/ide/common/xml/XmlFormatPreferences
+instanceKlass com/android/manifmerger/ToolsInstructionsCleaner
+instanceKlass com/android/manifmerger/PostValidator$1
+instanceKlass com/android/manifmerger/Actions
+instanceKlass com/android/manifmerger/PostValidator
+instanceKlass java/util/TreeMap$NavigableSubMap$SubMapIterator
+instanceKlass java/util/Collections$ReverseComparator
+instanceKlass com/android/manifmerger/ElementsTrimmer
+instanceKlass com/android/manifmerger/XmlElement$1
+instanceKlass com/android/manifmerger/PreValidator
+instanceKlass com/sun/org/apache/xerces/internal/dom/DeepNodeListImpl
+instanceKlass com/android/manifmerger/Selector
+instanceKlass com/android/manifmerger/ActionRecorder$$Lambda$267
+instanceKlass com/android/manifmerger/ConvertibleName
+instanceKlass com/android/manifmerger/Actions$Record
+instanceKlass com/android/manifmerger/ActionRecorder$$Lambda$266
+instanceKlass com/android/manifmerger/Actions$DecisionTreeRecord
+instanceKlass com/android/manifmerger/XmlNode$NodeKey
+instanceKlass com/android/manifmerger/XmlNode$Name
+instanceKlass com/android/utils/SdkUtils
+instanceKlass com/android/manifmerger/AttributeModel$Hexadecimal32Bits
+instanceKlass com/android/manifmerger/ManifestModel$TwoAttributesBasedKeyResolver
+instanceKlass com/android/manifmerger/AttributeModel$SeparatedValuesValidator
+instanceKlass com/android/manifmerger/XmlNode$NamespaceAwareName
+instanceKlass org/gradle/cache/internal/DefaultMultiProcessSafePersistentIndexedCache$4
+instanceKlass com/android/manifmerger/AttributeModel$3
+instanceKlass com/android/manifmerger/AttributeModel$2
+instanceKlass com/android/manifmerger/AttributeModel$1
+instanceKlass com/android/manifmerger/AttributeModel$MergingPolicy
+instanceKlass com/android/manifmerger/AttributeModel
+instanceKlass com/android/manifmerger/AttributeModel$Builder
+instanceKlass com/android/manifmerger/AttributeModel$BooleanValidator
+instanceKlass com/android/manifmerger/ManifestModel$2
+instanceKlass com/android/manifmerger/ManifestModel$1
+instanceKlass com/android/manifmerger/ManifestModel$NoKeyNodeResolver
+instanceKlass com/android/manifmerger/ManifestModel$AttributeBasedNodeKeyResolver
+instanceKlass com/android/manifmerger/ManifestModel
+instanceKlass com/android/manifmerger/AttributeModel$Validator
+instanceKlass com/android/manifmerger/ManifestModel$NodeKeyResolver
+instanceKlass com/android/manifmerger/XmlNode$1
+instanceKlass com/android/manifmerger/XmlNode$NodeName
+instanceKlass com/android/manifmerger/XmlNode
+instanceKlass com/android/manifmerger/XmlDocument
+instanceKlass com/android/utils/PositionXmlParser$Position
+instanceKlass com/sun/org/apache/xerces/internal/util/EntityResolver2Wrapper
+instanceKlass com/sun/org/apache/xerces/internal/dom/ParentNode$UserDataRecord
+instanceKlass org/xml/sax/ext/DeclHandler
+instanceKlass org/xml/sax/ext/LexicalHandler
+instanceKlass com/android/utils/PositionXmlParser
+instanceKlass com/android/manifmerger/XmlLoader
+instanceKlass com/android/manifmerger/ManifestMerger2$SelectorResolver
+instanceKlass com/android/manifmerger/ActionRecorder
+instanceKlass com/android/manifmerger/MergingReport$Builder
+instanceKlass com/android/manifmerger/ManifestMerger2$MapBasedKeyBasedValueResolver
+instanceKlass com/android/manifmerger/ManifestMerger2$FileStreamProvider
+instanceKlass com/android/manifmerger/ManifestMerger2$AutoAddingProperty
+instanceKlass com/android/manifmerger/ManifestMerger2$Invoker
+instanceKlass com/android/manifmerger/PlaceholderHandler$KeyBasedValueResolver
+instanceKlass com/android/manifmerger/ManifestMerger2$ManifestInfo
+instanceKlass com/android/manifmerger/KeyResolver
+instanceKlass com/android/manifmerger/ManifestMerger2
+instanceKlass com/android/build/gradle/tasks/MergeManifests$ConfigAction$ManifestProviderImpl
+instanceKlass com/android/manifmerger/ManifestProvider
+instanceKlass org/gradle/api/internal/artifacts/result/DefaultResolvedVariantResult
+instanceKlass org/gradle/api/artifacts/result/ResolvedVariantResult
+instanceKlass org/gradle/api/internal/artifacts/result/DefaultResolvedArtifactResult
+instanceKlass org/gradle/api/internal/artifacts/ivyservice/ResolvedArtifactCollectingVisitor
+instanceKlass com/android/build/gradle/internal/scope/OutputScope$$Lambda$265
+instanceKlass com/android/build/gradle/internal/scope/BuildOutputs$$Lambda$264
+instanceKlass com/android/build/gradle/internal/scope/BuildOutputs$$Lambda$263
+instanceKlass com/google/gson/internal/ConstructorConstructor$11
+instanceKlass com/google/gson/internal/UnsafeAllocator
+instanceKlass com/google/gson/internal/ConstructorConstructor$12
+instanceKlass org/gradle/api/internal/changedetection/changes/StatefulIncrementalTaskInputs
+instanceKlass org/gradle/api/internal/changedetection/changes/IncrementalTaskInputsInternal
+instanceKlass org/gradle/api/internal/changedetection/changes/DiscoveredInputRecorder
+instanceKlass org/gradle/api/internal/tasks/execution/ExecuteActionsTaskExecuter$1
+instanceKlass org/gradle/internal/logging/compatbridge/LoggingManagerInternalCompatibilityBridge
+instanceKlass com/android/build/gradle/tasks/MergeManifests$$Lambda$262
+instanceKlass com/android/build/gradle/tasks/MergeManifests$$Lambda$261
+instanceKlass com/android/build/gradle/tasks/MergeManifests$$Lambda$260
+instanceKlass com/android/build/gradle/tasks/ManifestProcessorTask$$Lambda$259
+instanceKlass com/android/build/gradle/internal/scope/OutputFactory$1
+instanceKlass org/gradle/api/internal/changedetection/state/SerializedValueSnapshot
+instanceKlass com/android/build/gradle/tasks/MergeResources$ConfigAction$$Lambda$258
+instanceKlass org/gradle/api/internal/changedetection/state/SetValueSnapshot
+instanceKlass org/gradle/api/internal/artifacts/ivyservice/ShortCircuitEmptyConfigurationResolver$EmptyResolvedConfiguration
+instanceKlass org/gradle/api/internal/changedetection/state/ListValueSnapshot
+instanceKlass org/gradle/api/internal/changedetection/state/MissingFileSnapshot
+instanceKlass com/android/builder/core/VariantConfiguration$$Lambda$257
+instanceKlass com/android/builder/core/VariantConfiguration$$Lambda$256
+instanceKlass com/android/build/gradle/internal/CombinedInput
+instanceKlass org/gradle/api/internal/changedetection/state/NullValueSnapshot
+instanceKlass org/gradle/api/internal/changedetection/state/AbstractScalarValueSnapshot
